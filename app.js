@@ -12,6 +12,14 @@ footerContainer.setAttribute(
 );
 const dataBackground = document.querySelectorAll("[data-bg]");
 
+// BLACK OR WHITE LOGO ACC.. PAGE
+const chageLogo = () => {
+  if (document.body.classList.contains("homepage")) {
+    return `<img class="normal" src="assets/logo/logo-white.png" alt="Devoir logo">`;
+  } else {
+    return `<img class="normal" src="assets/logo/logo-black.png" alt="Devoir logo">`;
+  }
+};
 // Header Building
 const headerTemplate = (headerElement) => {
   headerElement.innerHTML = `
@@ -19,8 +27,8 @@ const headerTemplate = (headerElement) => {
                 <div class="row align-items-center">
                     <div class="col-lg-2 col-md-3 col-4">
                         <!-- logo area start -->
-                        <a href="index.html" class="thumbnail">
-                            <img class="normal" src="assets/logo/logo-white.png" alt="axela-logo">
+                        <a href="/" class="thumbnail">
+                            ${chageLogo()}
                             <img class="stickys" src="assets/logo/logo-black.png" alt="axela-logo">
                         </a>
                         <!-- logo area end -->
@@ -30,7 +38,7 @@ const headerTemplate = (headerElement) => {
                             <nav class="main-nav">
                                 <ul class="mainmenu">
                                     <li>
-                                        <a href="index-three.html">Home</a>
+                                        <a href="/">Home</a>
                                     </li>
                                     <li>
                                         <a href="about.html">About</a>
@@ -303,13 +311,13 @@ const clientsLogosTemplate = (clientElement) => {
   }
 };
 
-// Background image attribute
-
+// Background Image Attribute
 dataBackground.forEach((element) => {
   let BackgroundValue = element.getAttribute("data-bg");
   if (BackgroundValue.includes("url(")) {
     element.style.backgroundImage = BackgroundValue;
   }
+  element.style.backgroundColor = BackgroundValue;
 });
 
 document.addEventListener("DOMContentLoaded", () => {
