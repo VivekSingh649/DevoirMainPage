@@ -1,65 +1,9 @@
 const projects = [
   {
-    projectName: "Oneiro",
-    firstImage:
-      "https://i0.wp.com/portfolio.devoirdesigns.com/wp-content/uploads/2024/05/onerio.jpg?fit=1440%2C1440&ssl=1",
-    secondImage:
-      "https://i0.wp.com/portfolio.devoirdesigns.com/wp-content/uploads/2024/05/dd-post_oneiro-1-1.png?resize=1536%2C1536&ssl=1",
-    link: "https://oneiroeducation.com/",
-  },
-  {
-    projectName: "Resolve Right",
-    firstImage: "/assets/projects/resolve-right (2).jpg",
-    secondImage: "/assets/projects/resolve-right (1).jpg",
-    link: "https://www.instagram.com/resolverights/",
-  },
-  // {
-  //   projectName: "Green Earth",
-  //   firstImage: "/assets/projects/green-earth (1).jpg",
-  //   secondImage: "/assets/projects/green-earth (2).jpg",
-  //   link: "https://www.instagram.com/greenearth.au/",
-  // },
-  {
-    projectName: "Naviritih",
-    firstImage: "/assets/projects/Naviritih.jpg",
-    secondImage: "/assets/projects/Naviritih 2.png",
-    link: "https://www.instagram.com/navritih.in/",
-  },
-  // {
-  //   projectName: "PCCS Logistics",
-  //   firstImage: "/assets/projects/pccs (1).jpg",
-  //   secondImage: "/assets/projects/pccs (2).jpg",
-  //   link: "https://www.instagram.com/pccslogistics/",
-  // },
-  {
-    projectName: "Live Eye",
-    firstImage: "/assets/projects/liveeye 2.jpg",
-    secondImage: "/assets/projects/liveeye 1.jpg",
-    link: "https://www.instagram.com/liveeye.inc/",
-  },
-  // {
-  //   projectName: "Michael Angelo",
-  //   firstImage: "/assets/projects/ma-1.jpg",
-  //   secondImage: "/assets/projects/ma-2.jpeg",
-  //   link: "https://www.instagram.com/michaelangelo.shoes/",
-  // },
-  // {
-  //   projectName: "Solesteps",
-  //   firstImage: "/assets/projects/sole-1.jpg",
-  //   secondImage: "/assets/projects/sole-2.jpg",
-  //   link: "https://www.instagram.com/solesteps.official/",
-  // },
-  {
-    projectName: "Hartansh",
-    firstImage: "/assets/projects/hartansh-1.jpg",
-    secondImage: "/assets/projects/hartansh-2.jpg",
-    link: "https://www.instagram.com/hartansh.official/",
-  },
-  {
-    projectName: "Deepmala Sarees",
-    secondImage: "/assets/projects/deep-1 (1).jpg",
-    firstImage: "/assets/projects/deep-1 (2).jpg",
-    link: "https://www.instagram.com/deepmalasarees/",
+    projectName: "Curagers",
+    image: "",
+    link: "",
+    bodyContent: "",
   },
 ];
 
@@ -132,10 +76,10 @@ const mainMenu = [
     name: "Our Services",
     link: "/our-services",
     subMenu: [
-      { name: "Branding", link: "/services/branding" },
-      { name: "Marketing", link: "/services/marketing" },
-      { name: "Designing", link: "/services/designing" },
-      { name: "Web Development", link: "/services/web-development" },
+      { name: "Branding", link: "/service/service-details" },
+      { name: "Marketing", link: "/service/service-details" },
+      { name: "Designing", link: "/service/service-details" },
+      { name: "Web Development", link: "/service/service-details" },
     ],
   },
   {

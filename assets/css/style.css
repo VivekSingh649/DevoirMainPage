@@ -24741,7 +24741,6 @@ p.disc {
 
 @media only screen and (max-width: 479px) {
   .appoinment-right .counter-wrapper-appoinment {
-    flex-direction: column;
     align-items: flex-start;
     margin-top: 20px;
   }
@@ -24749,6 +24748,7 @@ p.disc {
 
 @media only screen and (max-width: 479px) {
   .appoinment-right .counter-wrapper-appoinment .counter-single {
+    text-align: center;
     margin-bottom: 20px;
   }
 

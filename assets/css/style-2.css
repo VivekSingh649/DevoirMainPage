@@ -8,7 +8,7 @@
     }
 
     .banner_service {
-        font-size: 20px;
+        padding-top: 120px;
 
         i {
             color: var(--color-primary);
@@ -359,4 +359,49 @@
 
 .get-in-touch .wrapper .single a {
     line-height: 1.3em;
+}
+
+
+@media (max-width: 575px) {
+
+    .row {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .container,
+    .container-sm {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .about-section.pl--50 {
+        padding-left: 0 !important;
+    }
+
+    .contact-map-area-fluid .contact-map {
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner_service {
+        padding-top: 80px !important;
+        margin-bottom: 25px;
+
+        .main_title {
+            text-align: center;
+            font-size: 45px;
+            font-weight: 700;
+        }
+
+        .my-5 {
+            text-align: center;
+        }
+
+        .disc {
+            text-align: center;
+        }
+
+    }
 }

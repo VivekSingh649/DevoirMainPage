@@ -368,20 +368,36 @@ const mainMenuTemplate = (parientContainer) => {
   }
   mainMenu.forEach((menu) => {
     const menuLink = document.createElement("li");
-    menuLink.innerHTML = `<a href="${menu.link}">${menu.name}</a>`;
+    let htmlExtention = document.URL.includes("https");
+    menuLink.innerHTML = `<a href="${
+      htmlExtention ? menu.link : menu.link + ".html"
+    }">${menu.name}</a>`;
     if (menu.subMenu) {
       menuLink.classList.add("has-droupdown");
       let subMenuLink = document.createElement("ul");
       subMenuLink.classList.add("submenu");
       menu.subMenu.forEach((subMenu) => {
         const subMenuLinkRef = document.createElement("li");
-        subMenuLinkRef.innerHTML = `<a class="single" href="${subMenu.link}.html">${subMenu.name}</a>`;
+        subMenuLinkRef.innerHTML = `<a class="single" href="${
+          htmlExtention ? subMenu.link : subMenu.link + ".html"
+        }">${subMenu.name}</a>`;
         subMenuLink.appendChild(subMenuLinkRef);
       });
       menuLink.appendChild(subMenuLink);
     }
     parientContainer.appendChild(menuLink);
   });
+};
+
+const changePathForServicePage = (parientContainer) => {
+  if (document.body.classList.contains("service_details_page")) {
+    parientContainer.forEach((src) => {
+      const srcPath = src.getAttribute("src");
+      if (!srcPath.includes("../assets")) {
+        src.setAttribute("src", `../${srcPath}`);
+      }
+    });
+  }
 };
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -394,4 +410,6 @@ document.addEventListener("DOMContentLoaded", () => {
   servicePageTemplate(servicePageContainer);
   const mainMenuContainer = document.querySelectorAll(".mainmenu");
   mainMenuContainer.forEach((menu) => mainMenuTemplate(menu));
+  const pathChangeServiePage = document.body.querySelectorAll("img[src]");
+  changePathForServicePage(pathChangeServiePage);
 });
