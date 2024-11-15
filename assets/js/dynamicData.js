@@ -130,7 +130,7 @@ const mainMenu = [
   },
   {
     name: "Our Services",
-    link: "/services",
+    link: "/our-services",
     subMenu: [
       { name: "Branding", link: "/services/branding" },
       { name: "Marketing", link: "/services/marketing" },
@@ -139,7 +139,7 @@ const mainMenu = [
     ],
   },
   {
-    name: "Contact US",
+    name: "Contact Us",
     link: "/contact-us",
   },
   {

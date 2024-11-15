@@ -19346,7 +19346,7 @@ a.rts-read-more:hover i {
 .single-contact-one-inner .content {
   display: flex;
   align-items: center;
-  padding: 40px;
+  padding: 20px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -19365,7 +19365,8 @@ a.rts-read-more:hover i {
   font-weight: 500;
 }
 
-.single-contact-one-inner .content .info a h5 {
+.single-contact-one-inner .content .info a h6 {
+  font-size: 18px;
   margin-bottom: 0;
   transition: 0.3s;
 }

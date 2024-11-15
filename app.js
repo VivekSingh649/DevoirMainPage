@@ -14,9 +14,8 @@ const dataBackground = document.querySelectorAll("[data-bg]");
 const processBar = document.getElementById("processBar");
 const phoneNumber = 9810416275;
 const servicePageContainer = document.getElementById("servicePage");
-const mainMenuContainer = document.querySelectorAll(".mainmenu");
-
 // BLACK OR WHITE LOGO ACC.. PAGE
+
 const chageLogo = () => {
   if (document.body.classList.contains("homepage")) {
     return `<img class="normal" src="assets/logo/logo-white.png" alt="Devoir logo">`;
@@ -40,27 +39,7 @@ const headerTemplate = (headerElement) => {
                     <div class="col-lg-7 d-none d-xl-block">
                         <div class="main-header">
                             <nav class="main-nav">
-                                <ul class="mainmenu">
-                                    <li>
-                                        <a href="/">Home</a>
-                                    </li>
-                                    <li>
-                                        <a href="about.html">About</a>
-                                    </li>
-                                    <li class="has-droupdown">
-                                        <a href="#">Services</a>
-                                        <ul class="submenu">
-                                            <li><a class="single" href="service.html">Our Services</a></li>
-                                            <li><a class="single" href="service-details.html">Service Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="contactus.html">Contact</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://portfolio.devoirdesigns.com/">Portfolio</a>
-                                    </li>
-                                </ul>
+                                <ul class="mainmenu"></ul>
                             </nav>
                         </div>
                     </div>
@@ -382,36 +361,37 @@ const servicePageTemplate = (parientContainer) => {
 };
 
 // Main Menu Template
-// const mainMenuTemplate = (parientContainer) => {
-//   if (!parientContainer) {
-//     console.log("Main menu parent container not found!");
-//     return false;
-//   }
-//   mainMenu.forEach((menu) => {
-//     const menuLink = document.createElement("li");
-//     if (menu.subMenu) {
-//       menuLink.classList.add("has-dropdown");
-//       let subMenuLink = document.createElement("li");
-//       let subMenuRef = parientContainer.querySelector(".submenu");
-//       menuLink.innerHTML = `
-//       <a href="${menu.link}">${menu.name}</a>
-//       `;
-//       subMenuRef.appendChild(subMenuLink);
-//     }
-//     menuLink.innerHTML = `<a href="${menu.link}">${menu.name}</a>`;
-//     parientContainer.appendChild(menuLink);
-//   });
-// };
-
-// Assuming there is an HTML container for the main menu
+const mainMenuTemplate = (parientContainer) => {
+  if (!parientContainer) {
+    console.log("Main menu parent container not found!", parientContainer);
+    return false;
+  }
+  mainMenu.forEach((menu) => {
+    const menuLink = document.createElement("li");
+    menuLink.innerHTML = `<a href="${menu.link}">${menu.name}</a>`;
+    if (menu.subMenu) {
+      menuLink.classList.add("has-droupdown");
+      let subMenuLink = document.createElement("ul");
+      subMenuLink.classList.add("submenu");
+      menu.subMenu.forEach((subMenu) => {
+        const subMenuLinkRef = document.createElement("li");
+        subMenuLinkRef.innerHTML = `<a class="single" href="${subMenu.link}.html">${subMenu.name}</a>`;
+        subMenuLink.appendChild(subMenuLinkRef);
+      });
+      menuLink.appendChild(subMenuLink);
+    }
+    parientContainer.appendChild(menuLink);
+  });
+};
 
 document.addEventListener("DOMContentLoaded", () => {
   headerTemplate(header);
-  footerTemplate(footerContainer);
   sidebarTemplate(sideBar);
+  footerTemplate(footerContainer);
   clientsLogosTemplate(brandWrapper);
   processBarTemplate(processBar);
   addPhone();
   servicePageTemplate(servicePageContainer);
-  //   mainMenuContainer.forEach((menu) => mainMenuTemplate(menu));
+  const mainMenuContainer = document.querySelectorAll(".mainmenu");
+  mainMenuContainer.forEach((menu) => mainMenuTemplate(menu));
 });
