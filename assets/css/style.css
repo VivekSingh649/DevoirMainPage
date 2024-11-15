@@ -16014,7 +16014,8 @@ body {
 }
 
 .rts-sidebar-menu-desktop a .logo {
-  margin-top: 50px;
+  max-width: 80px;
+  margin-top: 25px;
 }
 
 .rts-sidebar-menu-desktop .body p.disc {
@@ -16029,10 +16030,13 @@ body {
   font-weight: 900;
 }
 
+.rts-sidebar-menu-desktop .get-in-touch .wrapper .single {
+  margin-bottom: 15px;
+}
+
 .rts-sidebar-menu-desktop .get-in-touch .wrapper .single i {
   color: var(--color-primary);
   margin-right: 10px;
-  margin-bottom: 15px;
 }
 
 .rts-sidebar-menu-desktop .social-area {

@@ -85,47 +85,92 @@ const brandLogos = [
 
 const mainServices = [
   {
-    name: "Digital Marketing & Campaigns",
-    thumbnail: "",
-    icon: "",
-    link: "",
-    content: "",
-  },
-  {
-    name: "Social Media Strategy & Design",
-    thumbnail: "",
-    icon: "",
-    link: "",
-    content: "",
-  },
-  {
-    name: "Design & Marketing Collaterals",
-    thumbnail: "",
-    icon: "",
-    link: "",
-    content: "",
-  },
-  {
-    name: "Website Design & Development",
-    thumbnail: "",
-    icon: "",
-    link: "",
-    content: "",
-  },
-  {
-    name: "Search Engine Optimization",
-    thumbnail: "",
-    icon: "",
-    link: "",
-    content: "",
-  },
-  {
     name: "Branding",
-    thumbnail: "",
+    thumbnail: "./assets/images/service/bradning.jpg",
+    icon: "./assets/images/service/09.svg",
+    link: "",
+    content:
+      "Building brands from scratch and rejuvenating old ones, we integrate design thinking in our branding philosophy to create memorable brands.",
+  },
+  {
+    name: "Marketing",
+    thumbnail: "./assets/images/service/marketing.jpg",
     icon: "",
     link: "",
-    content: "",
+    content:
+      "We create meaningful first impressions of your brand through designs that are stunning & rousing.",
+  },
+  {
+    name: "Designing",
+    thumbnail: "./assets/images/service/graphic design.jpg",
+    icon: "",
+    link: "",
+    content:
+      "We elevate your brand through successful marketing strategies that satisfy the needs of an ever-changing digital world.",
+  },
+  {
+    name: "Web Development",
+    thumbnail: "./assets/images/service/Web-developemt.jpg",
+    icon: "",
+    link: "",
+    content: `Transforming visions into digital realities, our website design
+                and development services craft intuitive user experiences and
+                visually stunning interfaces to captivate and engage audiences.`,
   },
 ];
 
-const bannerService = ["Strategy", "Branding", "Content", "Creative", "Film"];
+const mainMenu = [
+  {
+    name: "Home",
+    link: "/",
+  },
+  {
+    name: "About Us",
+    link: "/about-us",
+  },
+  {
+    name: "Our Services",
+    link: "/services",
+    subMenu: [
+      { name: "Branding", link: "/services/branding" },
+      { name: "Marketing", link: "/services/marketing" },
+      { name: "Designing", link: "/services/designing" },
+      { name: "Web Development", link: "/services/web-development" },
+    ],
+  },
+  {
+    name: "Contact US",
+    link: "/contact-us",
+  },
+  {
+    name: "Portfolio",
+    link: "https://portfolio.devoirdesigns.com/",
+  },
+];
+
+const ourValues = [
+  {
+    title: "Timely Delivery",
+    icon: "./assets/images/svg/timing.svg",
+    bodyContent:
+      "We understand the importance of deadlines and commit to delivering exceptional results on time.",
+  },
+  {
+    title: "Unwavering Creativity",
+    bodyContent:
+      "Creativity is at the heart of what we do. We push boundaries and bring fresh, innovative ideas.",
+    icon: "./assets/images/svg/solution.svg",
+  },
+  {
+    title: "Synergistic Collaboration",
+    bodyContent:
+      "We believe in the power of teamwork. By working closely with you, we ensure that your vision and our expertise align perfectly for maximum impact.",
+    icon: "./assets/images/svg/collaborate.svg",
+  },
+  {
+    title: "Engaging Content Strategy",
+    bodyContent:
+      "Our approach goes beyond just creating content; we craft meaningful, engaging stories that resonate with your audience and elevate your brand.",
+    icon: "./assets/images/svg/business.svg",
+  },
+];

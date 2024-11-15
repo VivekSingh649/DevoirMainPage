@@ -11,6 +11,10 @@ footerContainer.setAttribute(
   "rts-footer-three-area rts-section-gapTop bg_black"
 );
 const dataBackground = document.querySelectorAll("[data-bg]");
+const processBar = document.getElementById("processBar");
+const phoneNumber = 9810416275;
+const servicePageContainer = document.getElementById("servicePage");
+const mainMenuContainer = document.querySelectorAll(".mainmenu");
 
 // BLACK OR WHITE LOGO ACC.. PAGE
 const chageLogo = () => {
@@ -210,22 +214,21 @@ const sidebarTemplate = (sidebarElement) => {
               <button class="close-icon-menu"><i class="far fa-times"></i></button>
             <!-- inner menu area desktop start -->
             <div class="rts-sidebar-menu-desktop">
-                <a class="logo-1" href="index.html"><img class="logo" src="assets/images/logo/logo-1.png"
-                        alt="axela_logo"></a>
+                <a class="logo-1" href="index.html">
+                    <img class="logo" src="./assets/logo/logo-black.png" alt="axela_logo">
+                </a>
                 <div class="body d-none d-xl-block">
                     <p class="disc">
-                        We must explain to you how all seds this mistakens idea and pleasures and account.
+                        Devoir Designs is your one-stop destination for comprehensive marketing and creative solutions that drive results.
                     </p>
                     <div class="social-wrapper-two">
                         <ul class="social-area">
                             <li data-sal-delay="150" data-sal="slide-up" data-sal-duration="800" class="sal-animate"><a
-                                    href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li data-sal-delay="250" data-sal="slide-up" data-sal-duration="800" class="sal-animate"><a
-                                    href="#"><i class="fab fa-twitter"></i></a></li>
+                                    target="_blank" href="https://www.facebook.com/devoirdesignsofficial"><i class="fab fa-facebook-f"></i></a></li>
                             <li data-sal-delay="350" data-sal="slide-up" data-sal-duration="800" class="sal-animate"><a
-                                    href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    target="_blank" href="https://www.linkedin.com/company/devoir-designs/"><i class="fab fa-linkedin-in"></i></a></li>
                             <li data-sal-delay="450" data-sal="slide-up" data-sal-duration="800" class="sal-animate"><a
-                                    href="#"><i class="fab fa-skype"></i></a></li>
+                                    target="_blank" href="https://www.instagram.com/devoirdesigns/"><i class="fab fa-instagram"></i></a></li>
                         </ul>
                     </div>
                     <div class="get-in-touch mt--50">
@@ -236,25 +239,25 @@ const sidebarTemplate = (sidebarElement) => {
                             <!-- single -->
                             <div class="single">
                                 <i class="fas fa-phone-alt"></i>
-                                <a href="#">+8801234566789</a>
+                                <a href="__phone_num">+91 9810416275</a>
                             </div>
                             <!-- single ENd -->
                             <!-- single -->
                             <div class="single">
                                 <i class="fas fa-envelope"></i>
-                                <a href="#">example@gmail.com</a>
+                                <a href="mailto:info@devoirdesigns.com">info@devoirdesigns.com</a>
                             </div>
                             <!-- single ENd -->
                             <!-- single -->
                             <div class="single">
                                 <i class="fas fa-globe"></i>
-                                <a href="#">www.webexample.com</a>
+                                <a href="https://portfolio.devoirdesigns.com/">Portfolio</a>
                             </div>
                             <!-- single ENd -->
                             <!-- single -->
                             <div class="single">
                                 <i class="fas fa-map-marker-alt"></i>
-                                <a href="#">13/A, New Pro State, NYC</a>
+                                <a href="#">3, First Floor Nilgiri Shopping Complex, New Delhi - 110019</a>
                             </div>
                             <!-- single ENd -->
                         </div>
@@ -262,36 +265,19 @@ const sidebarTemplate = (sidebarElement) => {
                 </div>
                 <div class="body-mobile d-block d-xl-none">
                     <nav class="nav-main mainmenu-nav mt--30">
-                        <ul class="mainmenu" id="mobile-menu-active">
-                            <li>
-                                <a href="index.html">Home</a>
-                            </li>
-                            <li><a href="about.html">About Us</a></li>
-                            <!-- <li class="has-droupdown">
-                                <a href="#">Services</a>
-                                <ul class="submenu">
-                                    <li><a class="mobile-menu-link" href="service.html">Our Services</a></li>
-                                    <li><a class="mobile-menu-link" href="service-details.html">Service Details</a></li>
-                                </ul>
-                            </li> -->
-                            <li>
-                                <a href="contactus.html">Contact Us</a>
-                            </li>
-                        </ul>
+                        <ul class="mainmenu" id="mobile-menu-active"></ul>
                     </nav>
                     <div class="social-wrapper-two mt--50">
                         <ul class="social-area">
-                            <li data-sal-delay="150" data-sal="slide-up" data-sal-duration="800" class="sal-animate"><a
-                                    href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li data-sal-delay="250" data-sal="slide-up" data-sal-duration="800" class="sal-animate"><a
-                                    href="#"><i class="fab fa-twitter"></i></a></li>
+                             <li data-sal-delay="150" data-sal="slide-up" data-sal-duration="800" class="sal-animate"><a
+                                    target="_blank" href="https://www.facebook.com/devoirdesignsofficial"><i class="fab fa-facebook-f"></i></a></li>
                             <li data-sal-delay="350" data-sal="slide-up" data-sal-duration="800" class="sal-animate"><a
-                                    href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    target="_blank" href="https://www.linkedin.com/company/devoir-designs/"><i class="fab fa-linkedin-in"></i></a></li>
                             <li data-sal-delay="450" data-sal="slide-up" data-sal-duration="800" class="sal-animate"><a
-                                    href="#"><i class="fab fa-skype"></i></a></li>
+                                    target="_blank" href="https://www.instagram.com/devoirdesigns/"><i class="fab fa-instagram"></i></a></li>
                         </ul>
                     </div>
-                    <!-- <a href="#" class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btnmenu">Get Quote</a> -->
+                    <!-- <a href="__phone_num" class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btnmenu">Get Quote</a> -->
                 </div>
             </div>
             <!-- inner menu area desktop End -->
@@ -320,9 +306,112 @@ dataBackground.forEach((element) => {
   element.style.backgroundColor = BackgroundValue;
 });
 
+// Commoan animation on all same element
+const addAnimation = (element, index) => {
+  const animateDealy = `${index + 1}${50}`;
+  element.dataset.sal = "slide-up";
+  element.dataset.salDuration = "800";
+  element.dataset.salDelay = animateDealy;
+};
+
+// Process Bar About us
+const processBarTemplate = (parientContainer) => {
+  if (!parientContainer) {
+    console.log("Our value parent element not found");
+    return false;
+  }
+
+  ourValues.forEach((process, index) => {
+    let processElement = document.createElement("div");
+    processElement.classList.add("col-md-6", "col-lg-3");
+    addAnimation(processElement, index);
+    processElement.innerHTML = `
+    <div class="our-process">
+              <div class="circle-badge"></div>
+
+              <div class="process-icon">
+                <img
+                  src="${process.icon}"
+                  alt="${process.title}"
+                />
+              </div>
+              <div class="process-info">
+                <h3>${process.title}</h3>
+                <p>${process.bodyContent}</p>
+              </div>
+              <div class="process-count">
+                <h2>0${index + 1}</h2>
+              </div>
+     </div>
+    `;
+    parientContainer.insertAdjacentElement("beforeEnd", processElement);
+  });
+};
+
+// Link phone number to button
+const addPhone = () => {
+  document.querySelectorAll("a").forEach((link) => {
+    let href = link.getAttribute("href");
+    if (href.includes("__phone_num")) {
+      link.setAttribute("href", `tel:+91${phoneNumber}`);
+    }
+  });
+};
+
+// Service Page Template
+const servicePageTemplate = (parientContainer) => {
+  if (!parientContainer) {
+    console.log("Parent not found of all service");
+    return false;
+  }
+  mainServices.forEach((service, index) => {
+    const serviceCard = document.createElement("div");
+    serviceCard.classList.add("col-lg-6");
+    addAnimation(serviceCard, index);
+    serviceCard.innerHTML = `
+        <div class="service_wrapper">
+                  <img src="${service.thumbnail}" alt="${service.name}" />
+                  <div class="service_body">
+                    <h3 class="c-light">${service.name}</h3>
+                    <p class="disc c-light">${service.content}</p>
+                  </div>
+        </div>
+      `;
+    parientContainer.appendChild(serviceCard);
+  });
+};
+
+// Main Menu Template
+// const mainMenuTemplate = (parientContainer) => {
+//   if (!parientContainer) {
+//     console.log("Main menu parent container not found!");
+//     return false;
+//   }
+//   mainMenu.forEach((menu) => {
+//     const menuLink = document.createElement("li");
+//     if (menu.subMenu) {
+//       menuLink.classList.add("has-dropdown");
+//       let subMenuLink = document.createElement("li");
+//       let subMenuRef = parientContainer.querySelector(".submenu");
+//       menuLink.innerHTML = `
+//       <a href="${menu.link}">${menu.name}</a>
+//       `;
+//       subMenuRef.appendChild(subMenuLink);
+//     }
+//     menuLink.innerHTML = `<a href="${menu.link}">${menu.name}</a>`;
+//     parientContainer.appendChild(menuLink);
+//   });
+// };
+
+// Assuming there is an HTML container for the main menu
+
 document.addEventListener("DOMContentLoaded", () => {
   headerTemplate(header);
   footerTemplate(footerContainer);
   sidebarTemplate(sideBar);
   clientsLogosTemplate(brandWrapper);
+  processBarTemplate(processBar);
+  addPhone();
+  servicePageTemplate(servicePageContainer);
+  //   mainMenuContainer.forEach((menu) => mainMenuTemplate(menu));
 });
