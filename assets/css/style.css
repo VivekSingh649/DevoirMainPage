@@ -7641,17 +7641,28 @@ p.disc {
   }
 }
 
-.rts-appoinment-form .inner input {
-  border: 1px solid #e7e7f3;
-  border-radius: 15px;
-  height: 55px;
-  margin-bottom: 20px;
-  padding-left: 25px;
+.rts-appoinment-form .inner {
+
+  input,
+  textarea {
+    border: 1px solid #e7e7f3;
+    border-radius: 15px;
+    height: 55px;
+    margin-bottom: 20px;
+    padding-left: 25px;
+
+    &:focus {
+      border: 1px solid var(--color-primary);
+    }
+  }
+
+  textarea {
+    height: 80px;
+    padding-top: 15px;
+  }
+
 }
 
-.rts-appoinment-form .inner input:focus {
-  border: 1px solid var(--color-primary);
-}
 
 .rts-appoinment-form .inner button {
   margin-top: 10px;

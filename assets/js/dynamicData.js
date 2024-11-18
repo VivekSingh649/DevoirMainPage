@@ -30,7 +30,7 @@ const brandLogos = [
 const mainServices = [
   {
     name: "Branding",
-    thumbnail: "./assets/images/service/bradning.jpg",
+    thumbnail: "./assets/images/service/branding.webp",
     icon: "./assets/images/service/09.svg",
     link: "",
     content:
@@ -38,7 +38,7 @@ const mainServices = [
   },
   {
     name: "Marketing",
-    thumbnail: "./assets/images/service/marketing.jpg",
+    thumbnail: "./assets/images/service/marketing.webp",
     icon: "",
     link: "",
     content:
@@ -46,7 +46,7 @@ const mainServices = [
   },
   {
     name: "Designing",
-    thumbnail: "./assets/images/service/graphic design.jpg",
+    thumbnail: "./assets/images/service/graphic design.webp",
     icon: "",
     link: "",
     content:
@@ -54,7 +54,7 @@ const mainServices = [
   },
   {
     name: "Web Development",
-    thumbnail: "./assets/images/service/Web-developemt.jpg",
+    thumbnail: "./assets/images/service/Web-developemt.webp",
     icon: "",
     link: "",
     content: `Transforming visions into digital realities, our website design

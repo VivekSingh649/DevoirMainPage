@@ -117,7 +117,7 @@ const footerTemplate = (footerElement) => {
                                        <div class="body">
                                            <ul class="list">
                                                <li>
-                                                   <a href="tel:+919810416275"><i
+                                                   <a href="__phone_num"><i
                                                            class="far fa-chevron-double-right"></i>Branding</a>
                                                </li>
                                                <li><a href="tel:+919810416275"><i class="far fa-chevron-double-right"></i>Digital
@@ -154,8 +154,8 @@ const footerTemplate = (footerElement) => {
                                                <div class="icon">
                                                    <i class="fas fa-phone-alt"></i>
                                                </div>
-                                               <a href="#" class="call">
-                                                   +2154-215.123648
+                                               <a href="__phone_num" class="call">
+                                                   +91 9810416275
                                                </a>
                                            </div>
                                            <div class="rts-footer-contact">
