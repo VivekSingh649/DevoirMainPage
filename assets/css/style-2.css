@@ -132,6 +132,26 @@
             place-content: center;
             text-align: center;
             padding: 20px;
+
+            .link_badge {
+                width: 60px;
+                height: 60px;
+                background-color: var(--color-white);
+                border-radius: 50%;
+                margin: auto;
+                display: grid;
+                place-content: center;
+                transition: transform 300ms ease;
+
+                i {
+                    color: var(--color-primary);
+                    font-size: 20px;
+                }
+
+                &:hover {
+                    transform: rotate(-90deg);
+                }
+            }
         }
 
         &:hover {
@@ -422,4 +442,8 @@
     .our-process-container .col-md-6:nth-child(odd) .our-process {
         margin-top: 0;
     }
+}
+
+.homepage .header--sticky.sticky .normal {
+    filter: invert(0);
 }

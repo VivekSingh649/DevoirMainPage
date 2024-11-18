@@ -1,7 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.utils.toArray(".scroll-text").forEach((textRow, index) => {
-  const direction = index % 2 === 0 ? 50 : -50;
+  const direction = index % 2 === 0 ? 100 : -100;
 
   gsap.to(textRow, {
     xPercent: direction,

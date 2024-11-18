@@ -118,3 +118,69 @@ const ourValues = [
     icon: "./assets/images/svg/business.svg",
   },
 ];
+
+const formStructure = [
+  {
+    type: "text",
+    name: "full-name",
+    placeHolder: "Your Name",
+    required: true,
+  },
+  {
+    type: "email",
+    name: "email",
+    placeHolder: "Enter Email",
+    required: true,
+  },
+  {
+    type: "text",
+    name: "number",
+    placeHolder: "Phone Number",
+    required: true,
+  },
+  {
+    type: "textarea",
+    name: "message",
+    placeHolder: "Write your message here..",
+    required: false,
+  },
+];
+
+const portFolio = [
+  {
+    name: "Kabsons Global",
+    keyword: "Branding, Web Mangment, Marketing",
+    link: "https://kabsonsglobal.com/",
+    image: "./assets/projects/kaptions.webp",
+  },
+  {
+    name: "Deepmala Sarees",
+    keyword: "Branding, Strategy,Art Design, Marketing",
+    link: "https://www.instagram.com/deepmalasarees/",
+    image: "./assets/projects/deepmala.png",
+  },
+  {
+    name: "Curagers",
+    keyword: "Branding, Strategy, Art Design, Marketing",
+    link: "https://curagers.com/",
+    image: "./assets/projects/curagers.webp",
+  },
+  {
+    name: "Neumaticoshuecha",
+    keyword: "Branding, Web Development, Marketing",
+    link: "https://www.neumaticoshuecha.com/",
+    image: "./assets/projects/neumaticoshuecha.webp",
+  },
+  {
+    name: "Hartansh Official",
+    keyword: "Branding, Strategy, Art Design, Marketing",
+    link: "#",
+    image: "./assets/projects/hartansh.official.png",
+  },
+  {
+    name: "Oneiro Education",
+    keyword: "Branding, Strategy, Art Design, Marketing",
+    link: "https://oneiroeducation.com/",
+    image: "./assets/projects/onerio.webp",
+  },
+];

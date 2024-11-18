@@ -14,8 +14,10 @@ const dataBackground = document.querySelectorAll("[data-bg]");
 const processBar = document.getElementById("processBar");
 const phoneNumber = 9810416275;
 const servicePageContainer = document.getElementById("servicePage");
-// BLACK OR WHITE LOGO ACC.. PAGE
+const projectCardsContainer = document.querySelector(".portfolio_card_wrapper");
+const formDataContainer = document.getElementById("formWrapper");
 
+// BLACK OR WHITE LOGO ACC.. PAGE
 const chageLogo = () => {
   if (document.body.classList.contains("homepage")) {
     return `<img class="normal" src="assets/logo/logo-white.png" alt="Devoir logo">`;
@@ -68,7 +70,6 @@ const headerTemplate = (headerElement) => {
         `;
   document.body.insertAdjacentElement("afterbegin", headerElement);
 };
-
 // Footer Bulding
 const footerTemplate = (footerElement) => {
   footerElement.innerHTML = `
@@ -186,7 +187,6 @@ const footerTemplate = (footerElement) => {
             `;
   document.body.insertAdjacentElement("beforeend", footerElement);
 };
-
 // SideBar Building
 const sidebarTemplate = (sidebarElement) => {
   sidebarElement.innerHTML = `
@@ -263,7 +263,6 @@ const sidebarTemplate = (sidebarElement) => {
       `;
   header.insertAdjacentElement("afterend", sidebarElement);
 };
-
 // Cliets Section Building
 const clientsLogosTemplate = (clientElement) => {
   if (clientElement) {
@@ -275,7 +274,6 @@ const clientsLogosTemplate = (clientElement) => {
     });
   }
 };
-
 // Background Image Attribute
 dataBackground.forEach((element) => {
   let BackgroundValue = element.getAttribute("data-bg");
@@ -284,7 +282,6 @@ dataBackground.forEach((element) => {
   }
   element.style.backgroundColor = BackgroundValue;
 });
-
 // Commoan animation on all same element
 const addAnimation = (element, index) => {
   const animateDealy = `${index + 1}${50}`;
@@ -292,7 +289,6 @@ const addAnimation = (element, index) => {
   element.dataset.salDuration = "800";
   element.dataset.salDelay = animateDealy;
 };
-
 // Process Bar About us
 const processBarTemplate = (parientContainer) => {
   if (!parientContainer) {
@@ -326,7 +322,6 @@ const processBarTemplate = (parientContainer) => {
     parientContainer.insertAdjacentElement("beforeEnd", processElement);
   });
 };
-
 // Link phone number to button
 const addPhone = () => {
   document.querySelectorAll("a").forEach((link) => {
@@ -336,7 +331,6 @@ const addPhone = () => {
     }
   });
 };
-
 // Service Page Template
 const servicePageTemplate = (parientContainer) => {
   if (!parientContainer) {
@@ -359,7 +353,6 @@ const servicePageTemplate = (parientContainer) => {
     parientContainer.appendChild(serviceCard);
   });
 };
-
 // Main Menu Template
 const mainMenuTemplate = (parientContainer) => {
   if (!parientContainer) {
@@ -388,8 +381,12 @@ const mainMenuTemplate = (parientContainer) => {
     parientContainer.appendChild(menuLink);
   });
 };
-
+// Path change for service innerpage
 const changePathForServicePage = (parientContainer) => {
+  if (!parientContainer) {
+    console.log("Service inner page not found container ", parientContainer);
+    return false;
+  }
   if (document.body.classList.contains("service_details_page")) {
     parientContainer.forEach((src) => {
       const srcPath = src.getAttribute("src");
@@ -398,6 +395,57 @@ const changePathForServicePage = (parientContainer) => {
       }
     });
   }
+};
+// Portfolio Home page
+const portfolioTemplate = (parientContainer) => {
+  if (!parientContainer) {
+    console.log("Portfolio container not found ", parientContainer);
+    return false;
+  }
+  portFolio.forEach((project, index) => {
+    const projectElment = document.createElement("div");
+    addAnimation(projectElment, index);
+    projectElment.classList.add("col-12", "col-md-6");
+    if (index == 0 || index == 5) {
+      projectElment.classList.add("col-lg-8");
+    }
+    if (index == 1 || index == 4) {
+      projectElment.classList.add("col-lg-4");
+    }
+    projectElment.innerHTML = `
+            <div class="portfolio_card">
+              <img src="${project.image}" alt="${project.name}" />
+              <div class="content_body">
+                <h3 class="c-light">${project.name}</h3>
+                <p class="c-light">${project.keyword}</p>
+                <a href="${project.link}" target="_blank" class="link_badge">
+                  <i class="far fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+    `;
+    parientContainer.appendChild(projectElment);
+  });
+};
+// Form Data Creating
+const formFieldsTemplate = (parientContainer) => {
+  if (!parientContainer) {
+    console.log("Form container not found ", parientContainer);
+    return false;
+  }
+  formStructure.forEach((field) => {
+    let inputField;
+    if (field.type === "textarea") {
+      inputField = document.createElement("textarea");
+    } else {
+      inputField = document.createElement("input");
+    }
+    inputField.type = field.type;
+    inputField.placeholder = field.placeHolder;
+    inputField.required = field.required;
+    console.log(inputField);
+    parientContainer.appendChild(inputField);
+  });
 };
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -412,4 +460,6 @@ document.addEventListener("DOMContentLoaded", () => {
   mainMenuContainer.forEach((menu) => mainMenuTemplate(menu));
   const pathChangeServiePage = document.body.querySelectorAll("img[src]");
   changePathForServicePage(pathChangeServiePage);
+  portfolioTemplate(projectCardsContainer);
+  formFieldsTemplate(formDataContainer);
 });

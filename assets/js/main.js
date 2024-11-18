@@ -29,7 +29,6 @@
       imJs.marqueActivation();
       imJs.wowActive();
       imJs.mouseActive();
-      imJs.DarkLightActive();
     },
     // done
     swiperActivation: function () {
