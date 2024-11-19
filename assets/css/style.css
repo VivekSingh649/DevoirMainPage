@@ -768,7 +768,8 @@ li>ul {
   margin: 0;
 }
 
-img {
+img,
+video {
   -ms-interpolation-mode: bicubic;
   border: 0;
   vertical-align: middle;
@@ -5920,6 +5921,7 @@ p.disc {
 }
 
 .single-team-two .thumbnail img {
+  max-width: 80px;
   transition: 0.3s;
   border-radius: 15px;
 }

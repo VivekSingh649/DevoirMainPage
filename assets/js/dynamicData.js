@@ -1,62 +1,33 @@
-const projects = [
-  {
-    projectName: "Curagers",
-    image: "",
-    link: "",
-    bodyContent: "",
-  },
-];
-
-const brandLogos = [
-  "assets/logo/aapka-ca-01.webp",
-  "assets/logo/edu-logo.webp",
-  "assets/logo/Final-logo-for-proptej-01.webp",
-  "assets/logo/Logo-02.webp",
-  "assets/logo/Logo-03.webp",
-  "assets/logo/Logo-04 (1).webp",
-  "assets/logo/Logo-04.webp",
-  "assets/logo/Logo-06.webp",
-  "assets/logo/Logo-07.webp",
-  "assets/logo/Logos-of_arc.webp",
-  "assets/logo/Logos-of_cafe-by-soul.webp",
-  "assets/logo/NNNNwq-01.webp",
-  "assets/logo/ups-logo-01-1.webp",
-  "assets/logo/website-logo-of_CSG.webp",
-  "assets/logo/website-logo-of_RS.webp",
-  "assets/logo/Logos-of_aeros-griffin.webp",
-  "assets/logo/Logos-of_Antibot.webp",
-];
-
 const mainServices = [
   {
     name: "Branding",
     thumbnail: "./assets/images/service/branding.webp",
-    icon: "./assets/images/service/09.svg",
-    link: "",
+    icon: "assets/images/service/09.svg",
+    link: "service/branding.html",
     content:
       "Building brands from scratch and rejuvenating old ones, we integrate design thinking in our branding philosophy to create memorable brands.",
   },
   {
     name: "Marketing",
     thumbnail: "./assets/images/service/marketing.webp",
-    icon: "",
-    link: "",
+    link: "service/service-details.html",
+    icon: "assets/images/service/10.svg",
     content:
       "We create meaningful first impressions of your brand through designs that are stunning & rousing.",
   },
   {
     name: "Designing",
     thumbnail: "./assets/images/service/graphic design.webp",
-    icon: "",
-    link: "",
+    link: "service/service-details.html",
+    icon: "assets/images/service/11.svg",
     content:
       "We elevate your brand through successful marketing strategies that satisfy the needs of an ever-changing digital world.",
   },
   {
     name: "Web Development",
     thumbnail: "./assets/images/service/Web-developemt.webp",
-    icon: "",
-    link: "",
+    link: "service/service-details.html",
+    icon: "assets/images/service/12.svg",
     content: `Transforming visions into digital realities, our website design
                 and development services craft intuitive user experiences and
                 visually stunning interfaces to captivate and engage audiences.`,
@@ -76,10 +47,10 @@ const mainMenu = [
     name: "Our Services",
     link: "/our-services",
     subMenu: [
-      { name: "Branding", link: "/service/service-details" },
-      { name: "Marketing", link: "/service/service-details" },
-      { name: "Designing", link: "/service/service-details" },
-      { name: "Web Development", link: "/service/service-details" },
+      { name: "Branding", link: "/service/branding" },
+      { name: "Marketing", link: "/service/marketing" },
+      { name: "Designing", link: "/service/designing" },
+      { name: "Web Development", link: "/service/web-development" },
     ],
   },
   {
@@ -157,7 +128,7 @@ const portFolio = [
     name: "Deepmala Sarees",
     keyword: "Branding, Strategy,Art Design, Marketing",
     link: "https://www.instagram.com/deepmalasarees/",
-    image: "./assets/projects/deepmala.png",
+    image: "./assets/projects/deepmala.webp",
   },
   {
     name: "Curagers",
@@ -174,8 +145,8 @@ const portFolio = [
   {
     name: "Hartansh Official",
     keyword: "Branding, Strategy, Art Design, Marketing",
-    link: "#",
-    image: "./assets/projects/hartansh.official.png",
+    link: "https://www.instagram.com/hartansh.official/",
+    image: "./assets/projects/hartansh.official.webp",
   },
   {
     name: "Oneiro Education",
@@ -184,3 +155,9 @@ const portFolio = [
     image: "./assets/projects/onerio.webp",
   },
 ];
+
+const logoCount = 36;
+const logos = Array.from(
+  { length: logoCount },
+  (_, i) => `assets/logo/logo-${i + 1}.webp`
+);

@@ -16,6 +16,9 @@ const phoneNumber = 9810416275;
 const servicePageContainer = document.getElementById("servicePage");
 const projectCardsContainer = document.querySelector(".portfolio_card_wrapper");
 const formDataContainer = document.getElementById("formWrapper");
+const marqueeContainer = document.getElementById("brandMarquee");
+const gridClients = document.getElementById("clients-logo-grid");
+const homePageServiceContainer = document.getElementById("home-page-service");
 
 // BLACK OR WHITE LOGO ACC.. PAGE
 const chageLogo = () => {
@@ -80,7 +83,7 @@ const footerTemplate = (footerElement) => {
                                    <div class="header">
                                        <a href="#" style="display: flex; align-items: center;">
                                            <img src="assets/logo/logo-white.png" alt="Footer_logo" style="max-width: 40px;">
-                                           <h5 style="margin: 0; margin-left: 25px; color: #fff;">Devoir Design</h5>
+                                           <h5 style="margin: 0; margin-left: 25px; color: #fff;">Devoir Designs</h5>
                                        </a>
                                    </div>
                                    <div class="body left" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
@@ -118,16 +121,16 @@ const footerTemplate = (footerElement) => {
                                        <div class="body">
                                            <ul class="list">
                                                <li>
-                                                   <a href="__phone_num"><i
-                                                           class="far fa-chevron-double-right"></i>Branding</a>
+                                                   <a href="/service/branding.html">
+                                                   <i class="far fa-chevron-double-right"></i>Branding</a>
                                                </li>
-                                               <li><a href="tel:+919810416275"><i class="far fa-chevron-double-right"></i>Digital
+                                               <li><a href="/service/marketing.html"><i class="far fa-chevron-double-right"></i>Digital
                                                        Marketing</a>
                                                </li>
-                                               <li><a href="tel:+919810416275"><i class="far fa-chevron-double-right"></i>Web
+                                               <li><a href="/service/web-development.html"><i class="far fa-chevron-double-right"></i>Web
                                                        Development</a>
                                                </li>
-                                               <li><a href="tel:+919810416275"><i class="far fa-chevron-double-right"></i>Graphic
+                                               <li><a href="/service/designing.html"><i class="far fa-chevron-double-right"></i>Graphic
                                                        Designing</a>
                                                </li>
                                            </ul>
@@ -264,15 +267,72 @@ const sidebarTemplate = (sidebarElement) => {
   header.insertAdjacentElement("afterend", sidebarElement);
 };
 // Cliets Section Building
-const clientsLogosTemplate = (clientElement) => {
-  if (clientElement) {
-    brandLogos.forEach((brand) => {
-      const card = document.createElement("div");
-      card.classList.add("col-4", "col-md-3", "col-lg-2");
-      card.innerHTML = `<img src="${brand}" alt="brands images"/>`;
-      clientElement.appendChild(card);
-    });
+const clientsLogosTemplate = (parientContainer) => {
+  if (!parientContainer) {
+    console.log("Marquee container not found ", parientContainer);
+    return false;
   }
+
+  const createMarqueeGroup = (images, isReverse) => {
+    const marquee = document.createElement("div");
+    marquee.classList.add("marquee");
+    if (isReverse) marquee.classList.add("reverse");
+
+    const marqueeContent = document.createElement("div");
+    marqueeContent.classList.add("marquee-content");
+
+    images.forEach((imgSrc) => {
+      const img = document.createElement("img");
+      img.src = imgSrc;
+      img.alt = "Brand Logo";
+      marqueeContent.appendChild(img);
+    });
+
+    marquee.appendChild(marqueeContent);
+    return marquee;
+  };
+
+  const groupSize = Math.ceil(logos.length / 3);
+  const groups = [];
+
+  for (let i = 0; i < 12; i++) {
+    groups.push(logos.slice(i * groupSize, (i + 1) * groupSize));
+  }
+
+  groups.forEach((group, index) => {
+    const isReverse = index % 2 !== 0;
+    parientContainer.appendChild(createMarqueeGroup(group, isReverse));
+  });
+  // Initialize GSAP animation
+  const marquees = document.querySelectorAll(".marquee-content");
+  marquees.forEach((marqueeContent, index) => {
+    const totalWidth = marqueeContent.scrollWidth;
+
+    gsap.to(marqueeContent, {
+      x: index % 2 === 0 ? `-${totalWidth}px` : `${totalWidth}px`, // Reverse direction for odd indexes
+      duration: totalWidth / 100, // Adjust speed based on total width
+      repeat: -1,
+      ease: "linear",
+    });
+  });
+};
+// Cliets Section Building
+const clientsLogosTemplateGrid = (parientContainer) => {
+  if (!parientContainer) {
+    console.log(
+      "Parent Container not found of ClientGridSection",
+      parientContainer
+    );
+    return false;
+  }
+
+  logos.forEach((brand, index) => {
+    if (index + 1 == 4) return false;
+    const card = document.createElement("div");
+    card.classList.add("col");
+    card.innerHTML = `<img src="${brand}" alt="Brand Logo"/>`;
+    parientContainer.appendChild(card);
+  });
 };
 // Background Image Attribute
 dataBackground.forEach((element) => {
@@ -447,6 +507,43 @@ const formFieldsTemplate = (parientContainer) => {
     parientContainer.appendChild(inputField);
   });
 };
+const homePageService = (parientContainer) => {
+  if (!parientContainer) {
+    console.log("Home Page container not found ", parientContainer);
+    return false;
+  }
+  mainServices.forEach((service, index) => {
+    const serviceCard = document.createElement("div");
+    serviceCard.classList.add(
+      "col-xl-3",
+      "col-lg-4",
+      "col-md-6",
+      "col-sm-6",
+      "col-12"
+    );
+    addAnimation(serviceCard);
+
+    serviceCard.innerHTML = `
+            <!-- single service area start -->
+            <div class="rts-single-service-one home-three text-center">
+              <div class="icon">
+                <img src="${service.icon}" alt="axela_service" />
+              </div>
+              <a href="service-details.html">
+                <h5 class="title">${service.name}</h5>
+              </a>
+              <p class="disc">
+                ${service.content}
+              </p>
+              <a href="${service.link}" class="rts-read-more two"
+                >Read More<i class="far fa-arrow-right"></i
+              ></a>
+            </div>
+            <!-- single service area end -->
+    `;
+    parientContainer.appendChild(serviceCard);
+  });
+};
 
 document.addEventListener("DOMContentLoaded", () => {
   headerTemplate(header);
@@ -462,4 +559,7 @@ document.addEventListener("DOMContentLoaded", () => {
   changePathForServicePage(pathChangeServiePage);
   portfolioTemplate(projectCardsContainer);
   formFieldsTemplate(formDataContainer);
+  // clientsLogosTemplate(marqueeContainer);
+  clientsLogosTemplateGrid(gridClients);
+  homePageService(homePageServiceContainer);
 });
