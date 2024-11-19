@@ -119,10 +119,10 @@ const formStructure = [
 
 const portFolio = [
   {
-    name: "Kabsons Global",
-    keyword: "Branding, Web Mangment, Marketing",
-    link: "https://kabsonsglobal.com/",
-    image: "./assets/projects/kaptions.webp",
+    name: "Oneiro Education",
+    keyword: "Branding, Strategy, Art Design, Marketing",
+    link: "https://oneiroeducation.com/",
+    image: "./assets/projects/onerio.webp",
   },
   {
     name: "Deepmala Sarees",
@@ -131,16 +131,16 @@ const portFolio = [
     image: "./assets/projects/deepmala.webp",
   },
   {
+    name: "Kabsons Global",
+    keyword: "Branding, Web Mangment, Marketing",
+    link: "https://kabsonsglobal.com/",
+    image: "./assets/projects/kaptions.webp",
+  },
+  {
     name: "Curagers",
     keyword: "Branding, Strategy, Art Design, Marketing",
     link: "https://curagers.com/",
     image: "./assets/projects/curagers.webp",
-  },
-  {
-    name: "Neumaticoshuecha",
-    keyword: "Branding, Web Development, Marketing",
-    link: "https://www.neumaticoshuecha.com/",
-    image: "./assets/projects/neumaticoshuecha.webp",
   },
   {
     name: "Hartansh Official",
@@ -149,10 +149,10 @@ const portFolio = [
     image: "./assets/projects/hartansh.official.webp",
   },
   {
-    name: "Oneiro Education",
-    keyword: "Branding, Strategy, Art Design, Marketing",
-    link: "https://oneiroeducation.com/",
-    image: "./assets/projects/onerio.webp",
+    name: "Neumaticoshuecha",
+    keyword: "Branding, Web Development, Marketing",
+    link: "https://www.neumaticoshuecha.com/",
+    image: "./assets/projects/neumaticoshuecha.webp",
   },
 ];
 

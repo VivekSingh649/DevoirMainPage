@@ -36,8 +36,7 @@ const headerTemplate = (headerElement) => {
                     <div class="col-lg-2 col-md-3 col-4">
                         <!-- logo area start -->
                         <a href="/" class="thumbnail">
-                            ${chageLogo()}
-                            <img class="stickys" src="assets/logo/logo-black.png" alt="axela-logo">
+                            <img class="normal" src="assets/logo/logo-white.png" alt="axela-logo">
                         </a>
                         <!-- logo area end -->
                     </div>

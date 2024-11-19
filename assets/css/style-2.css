@@ -2,6 +2,11 @@
     width: 100%;
     background-color: var(--color-heading-1);
 
+    .row {
+        padding-top: 80px;
+    }
+
+
     h1 {
         text-transform: uppercase;
         line-height: 1.2em;
@@ -83,11 +88,11 @@
         span {
             font-size: 16vw;
             font-weight: 900;
-            color: var(--color-heading-1);
+            color: var(--color-white);
             line-height: 0.8em;
 
             &.white {
-                color: var(--color-white);
+                color: var(--color-heading-1);
                 font-size: 5vw;
             }
         }
@@ -287,7 +292,7 @@
     height: 100%;
     bottom: 0;
     left: 0;
-    background-image: url(../images/working-process/process-arrow.png);
+    background-image: url(../images/svg/process-arrow.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -407,7 +412,7 @@
 
 @media (max-width: 767px) {
     .banner_service {
-        padding-top: 80px !important;
+        padding-top: 100px !important;
         margin-bottom: 25px;
 
         .main_title {
@@ -444,9 +449,9 @@
     }
 }
 
-.homepage .header--sticky.sticky .normal {
+/* .homepage .header--sticky.sticky .normal {
     filter: invert(0);
-}
+} */
 
 .brand_logo {
     width: 100%;
@@ -457,4 +462,9 @@
     padding: 10px;
     aspect-ratio: 1/1;
     object-fit: contain;
+}
+
+.accordion-button {
+    align-items: flex-start;
+    gap: 5px;
 }

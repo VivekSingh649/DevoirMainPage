@@ -1082,10 +1082,6 @@ body {
   background: var(--color-heading-1);
   z-index: 999;
 
-  .normal {
-    filter: invert(1);
-  }
-
   .mainmenu li a {
     color: var(--color-white) !important;
   }
@@ -4504,7 +4500,15 @@ header .active-dark {
 }
 
 .header-one .thumbnail img {
-  max-width: 40px;
+  padding-top: 20px;
+  max-width: 80px;
+}
+
+.header-one.sticky {
+  .normal {
+    max-width: 50px;
+    padding: 0;
+  }
 }
 
 @media only screen and (max-width: 575px) {
@@ -4531,7 +4535,7 @@ header .active-dark {
 .header-one .main-header .main-nav .mainmenu li a {
   padding: 20px 0 20px 0;
   display: inline-block;
-  color: #111a2e;
+  color: var(--color-white);
   font-weight: 500;
   font-size: 16px;
   font-family: var(--font-primary);
@@ -5081,7 +5085,7 @@ body {
 }
 
 .breadcrumb-bg {
-  background-image: url(../images/breadcrumb/01.jpg);
+  background-image: url(../images/breadcrumb/breadcrumbs.svg);
 }
 
 @media only screen and (max-width: 767px) {
@@ -5103,7 +5107,7 @@ body {
 }
 
 .rts-breadcrumb-area .title {
-  color: #000;
+  color: var(--color-white);
   margin-bottom: 0;
 }
 
@@ -5912,11 +5916,12 @@ p.disc {
   overflow: hidden;
   display: block;
   border-radius: 15px;
+  border-radius: 50%;
 }
 
 @media only screen and (max-width: 767px) {
   .single-team-two .thumbnail {
-    width: 45%;
+    width: 60px;
   }
 }
 
@@ -7557,11 +7562,11 @@ p.disc {
 }
 
 .accordion-wrapper-area .accordion .accordion-item .accordion-header button {
-  height: 60px;
+  min-height: 60px;
   font-weight: 600;
   font-size: 17px;
   line-height: 20px;
-  padding: 0 25px;
+  padding: 10px 25px;
 }
 
 @media only screen and (max-width: 575px) {
@@ -7576,6 +7581,9 @@ p.disc {
   font-family: "Font Awesome 5 Pro" !important;
   transform: none;
   margin-top: -10px;
+  position: absolute;
+  top: 50%;
+  right: 15px;
 }
 
 .accordion-wrapper-area .accordion .accordion-item .accordion-header button[aria-expanded="true"] {
