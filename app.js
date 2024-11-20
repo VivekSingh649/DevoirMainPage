@@ -12,7 +12,7 @@ footerContainer.setAttribute(
 );
 const dataBackground = document.querySelectorAll("[data-bg]");
 const processBar = document.getElementById("processBar");
-const phoneNumber = 9810416275;
+const phoneNumber = 9811173841;
 const servicePageContainer = document.getElementById("servicePage");
 const projectCardsContainer = document.querySelector(".portfolio_card_wrapper");
 const formDataContainer = document.getElementById("formWrapper");
@@ -50,7 +50,7 @@ const headerTemplate = (headerElement) => {
                     <div class="col-xl-3 col-lg-10 col-md-9 col-8">
     
                         <div class="header-right">
-                            <a href="tel:+919810416275" class="rts-btn btn-secondary call-btn">Let’s Talk
+                            <a href="tel:+919811173841" class="rts-btn btn-secondary call-btn">Let’s Talk
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
                                     fill="none">
                                     <path
@@ -158,7 +158,7 @@ const footerTemplate = (footerElement) => {
                                                    <i class="fas fa-phone-alt"></i>
                                                </div>
                                                <a href="__phone_num" class="call">
-                                                   +91 9810416275
+                                                   +91 9811173841
                                                </a>
                                            </div>
                                            <div class="rts-footer-contact">
@@ -220,7 +220,7 @@ const sidebarTemplate = (sidebarElement) => {
                             <!-- single -->
                             <div class="single">
                                 <i class="fas fa-phone-alt"></i>
-                                <a href="__phone_num">+91 9810416275</a>
+                                <a href="__phone_num">+91 9811173841</a>
                             </div>
                             <!-- single ENd -->
                             <!-- single -->
@@ -403,10 +403,10 @@ const servicePageTemplate = (parientContainer) => {
     serviceCard.innerHTML = `
         <div class="service_wrapper">
                   <img src="${service.thumbnail}" alt="${service.name}" />
-                  <div class="service_body">
+                  <a href="${service.link}" class="service_body">
                     <h3 class="c-light">${service.name}</h3>
                     <p class="disc c-light">${service.content}</p>
-                  </div>
+                  </a>
         </div>
       `;
     parientContainer.appendChild(serviceCard);

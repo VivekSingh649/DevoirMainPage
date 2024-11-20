@@ -41,13 +41,12 @@
 35. Dark Version style
 
 /* Default  */
-/* @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 
 :root {
   --color-primary: #b91001;
-  --color-secondary: #68191e;
+  --color-secondary: #b91001;
   --color-terciary: #90ff03;
   --color-body: #6f737b;
   --color-heading-1: #141414;
@@ -86,8 +85,8 @@
   --s-extra-bold: 800;
   --s-black: 900;
   --transition: 0.3s;
-  --font-primary: "Montserrat", sans-serif;
-  --font-secondary: "Montserrat", sans-serif;
+  --font-primary: "DM Sans", sans-serif;
+  --font-secondary: "Urbanist", sans-serif;
   --font-size-b1: 16px;
   --font-size-b2: 18px;
   --font-size-b3: 22px;
@@ -120,7 +119,7 @@ body {
   line-height: var(--line-height-b1);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Montserrat", sans-serif;
+  font-family: "DM Sans", sans-serif;
   color: var(--color-body);
   font-weight: var(--p-regular);
   position: relative;
@@ -188,7 +187,7 @@ h6,
 .h5,
 .h6 {
   word-break: break-word;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Urbanist", sans-serif;
   line-height: 1.4074;
   color: var(--color-heading-1);
 }
@@ -4469,6 +4468,7 @@ header .active-dark {
   position: absolute;
   width: 100%;
   z-index: 5;
+  padding-top: 15px;
 }
 
 .header-one.two .rts-btn.btn-secondary.call-btn::before {
@@ -4501,7 +4501,7 @@ header .active-dark {
 }
 
 .header-one .thumbnail img {
-  padding-top: 20px;
+  /* padding-top: 20px; */
   max-width: 80px;
 }
 
@@ -5672,6 +5672,7 @@ a.rts-read-more:hover i {
   display: flex;
   align-items: flex-start;
   border-left: 5px solid var(--color-primary);
+  min-height: 100%;
 }
 
 .service-detials-step-2 .single-service-step {
@@ -5679,6 +5680,7 @@ a.rts-read-more:hover i {
   padding: 40px 20px;
   border: 1px solid #eeeeee;
   box-shadow: 0px 6px 39px #0000000a;
+  min-height: 100%;
 }
 
 .service-detials-step-2 .single-service-step p.step {
@@ -5930,6 +5932,9 @@ p.disc {
   max-width: 80px;
   transition: 0.3s;
   border-radius: 15px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: top;
 }
 
 @media only screen and (max-width: 767px) {
@@ -6879,9 +6884,7 @@ p.disc {
 }
 
 .cta-bg-h4 {
-  background-image: url(../images/cta/04.jpg);
-  background-color: #dc2626;
-  background-blend-mode: multiply;
+  background-image: url(../images/cta/rectangle.jpg);
   overflow: hidden;
   z-index: 1;
   background-repeat: no-repeat;

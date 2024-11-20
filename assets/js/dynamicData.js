@@ -131,16 +131,16 @@ const portFolio = [
     image: "./assets/projects/deepmala.webp",
   },
   {
-    name: "Kabsons Global",
-    keyword: "Branding, Web Mangment, Marketing",
-    link: "https://kabsonsglobal.com/",
-    image: "./assets/projects/kaptions.webp",
+    name: "On Woods Products",
+    keyword: "Branding, Strategy, Art Design, Marketing",
+    link: "https://onwoodproducts.co/",
+    image: "./assets/projects/onwoods.png",
   },
   {
-    name: "Curagers",
+    name: "Resolve Rights",
     keyword: "Branding, Strategy, Art Design, Marketing",
-    link: "https://curagers.com/",
-    image: "./assets/projects/curagers.webp",
+    link: "https://onwoodproducts.co/",
+    image: "./assets/projects/resolve-right.png",
   },
   {
     name: "Hartansh Official",
@@ -154,9 +154,21 @@ const portFolio = [
     link: "https://www.neumaticoshuecha.com/",
     image: "./assets/projects/neumaticoshuecha.webp",
   },
+  {
+    name: "Curagers",
+    keyword: "Branding, Strategy, Art Design, Marketing",
+    link: "https://curagers.com/",
+    image: "./assets/projects/curagers.webp",
+  },
+  {
+    name: "Kabsons Global",
+    keyword: "Branding, Web Mangment, Marketing",
+    link: "https://kabsonsglobal.com/",
+    image: "./assets/projects/kaptions.webp",
+  },
 ];
 
-const logoCount = 36;
+const logoCount = 43;
 const logos = Array.from(
   { length: logoCount },
   (_, i) => `assets/logo/logo-${i + 1}.webp`
