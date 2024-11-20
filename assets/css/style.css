@@ -41,7 +41,8 @@
 35. Dark Version style
 
 /* Default  */
-@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 
 :root {
@@ -85,8 +86,8 @@
   --s-extra-bold: 800;
   --s-black: 900;
   --transition: 0.3s;
-  --font-primary: "DM Sans", sans-serif;
-  --font-secondary: "Urbanist", sans-serif;
+  --font-primary: "Montserrat", sans-serif;
+  --font-secondary: "Montserrat", sans-serif;
   --font-size-b1: 16px;
   --font-size-b2: 18px;
   --font-size-b3: 22px;
@@ -119,7 +120,7 @@ body {
   line-height: var(--line-height-b1);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: var(--color-body);
   font-weight: var(--p-regular);
   position: relative;
@@ -187,7 +188,7 @@ h6,
 .h5,
 .h6 {
   word-break: break-word;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.4074;
   color: var(--color-heading-1);
 }
