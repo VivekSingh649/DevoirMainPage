@@ -73,7 +73,7 @@ const ourValues = [
   {
     title: "Unwavering Creativity",
     bodyContent:
-      "Creativity is at the heart of what we do. We push boundaries and bring fresh, innovative ideas.",
+      "Creativity is at the heart of What We Do?. We push boundaries and bring fresh, innovative ideas.",
     icon: "./assets/images/svg/solution.svg",
   },
   {

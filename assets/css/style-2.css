@@ -20,7 +20,7 @@
             line-height: 1.4em;
 
             .full_width {
-                font-size: 9vw;
+                font-size: 8.5vw;
                 font-weight: 700;
                 margin-left: -10px;
                 display: block;
@@ -474,7 +474,7 @@
 
 @media (max-width: 767px) {
     .banner_service {
-        padding-top: 80px !important;
+        padding-top: 120px !important;
         margin-bottom: 25px;
 
         .main_title {
@@ -520,6 +520,18 @@
             font-weight: 700;
         }
 
+    }
+
+    .header-one .thumbnail img {
+        max-width: 50px;
+    }
+
+    .about-founder-wrapper {
+        padding-bottom: 40px;
+    }
+
+    .our-process::after {
+        display: none;
     }
 
 }

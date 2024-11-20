@@ -326,10 +326,11 @@ const clientsLogosTemplateGrid = (parientContainer) => {
   }
 
   logos.forEach((brand, index) => {
-    if (index + 1 == 4) return false;
+    const deleteLogo = [4, 17];
+    if (deleteLogo.includes(index + 1)) return false;
     const card = document.createElement("div");
     card.classList.add("col");
-    card.innerHTML = `<img src="${brand}" alt="Brand Logo"/>`;
+    card.innerHTML = `<img src="${brand}" alt="Brand Logo ${index + 1}"/>`;
     parientContainer.appendChild(card);
   });
 };
