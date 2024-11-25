@@ -168,8 +168,9 @@ const portFolio = [
   },
 ];
 
-const logoCount = 43;
+const logoCount = 55;
 const logos = Array.from(
   { length: logoCount },
   (_, i) => `assets/logo/logo-${i + 1}.webp`
 );
+console.log(logos);

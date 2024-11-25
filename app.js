@@ -266,55 +266,42 @@ const sidebarTemplate = (sidebarElement) => {
   header.insertAdjacentElement("afterend", sidebarElement);
 };
 // Cliets Section Building
-const clientsLogosTemplate = (parientContainer) => {
-  if (!parientContainer) {
-    console.log("Marquee container not found ", parientContainer);
-    return false;
+const clientsLogosSwiper = (parentContainer) => {
+  if (!parentContainer) {
+    console.log("Swiper container not found", parentContainer);
+    return;
   }
+  const swiperWrapper = parentContainer.querySelector(".swiper-wrapper");
 
-  const createMarqueeGroup = (images, isReverse) => {
-    const marquee = document.createElement("div");
-    marquee.classList.add("marquee");
-    if (isReverse) marquee.classList.add("reverse");
+  logos.forEach((logoSrc, index) => {
+    const deleteLogo = [4, 17];
+    if (deleteLogo.includes(index + 1)) return false;
+    const slide = document.createElement("div");
+    slide.classList.add("swiper-slide");
 
-    const marqueeContent = document.createElement("div");
-    marqueeContent.classList.add("marquee-content");
+    const img = document.createElement("img");
+    img.src = logoSrc;
+    img.alt = `Brand Logo ${index + 1}`;
+    img.classList.add("logo");
 
-    images.forEach((imgSrc) => {
-      const img = document.createElement("img");
-      img.src = imgSrc;
-      img.alt = "Brand Logo";
-      marqueeContent.appendChild(img);
-    });
-
-    marquee.appendChild(marqueeContent);
-    return marquee;
-  };
-
-  const groupSize = Math.ceil(logos.length / 3);
-  const groups = [];
-
-  for (let i = 0; i < 12; i++) {
-    groups.push(logos.slice(i * groupSize, (i + 1) * groupSize));
-  }
-
-  groups.forEach((group, index) => {
-    const isReverse = index % 2 !== 0;
-    parientContainer.appendChild(createMarqueeGroup(group, isReverse));
+    slide.appendChild(img);
+    swiperWrapper.appendChild(slide);
   });
-  // Initialize GSAP animation
-  const marquees = document.querySelectorAll(".marquee-content");
-  marquees.forEach((marqueeContent, index) => {
-    const totalWidth = marqueeContent.scrollWidth;
 
-    gsap.to(marqueeContent, {
-      x: index % 2 === 0 ? `-${totalWidth}px` : `${totalWidth}px`, // Reverse direction for odd indexes
-      duration: totalWidth / 100, // Adjust speed based on total width
-      repeat: -1,
-      ease: "linear",
-    });
+  new Swiper(parentContainer, {
+    spaceBetween: 0,
+    centeredSlides: true,
+    speed: 1500,
+    autoplay: {
+      delay: 0,
+    },
+    loop: true,
+    slidesPerView: "auto",
+    allowTouchMove: false,
+    disableOnInteraction: true,
   });
 };
+
 // Cliets Section Building
 const clientsLogosTemplateGrid = (parientContainer) => {
   if (!parientContainer) {
@@ -326,7 +313,7 @@ const clientsLogosTemplateGrid = (parientContainer) => {
   }
 
   logos.forEach((brand, index) => {
-    const deleteLogo = [4, 17];
+    const deleteLogo = [4, 17, 38];
     if (deleteLogo.includes(index + 1)) return false;
     const card = document.createElement("div");
     card.classList.add("col");
@@ -549,7 +536,6 @@ document.addEventListener("DOMContentLoaded", () => {
   headerTemplate(header);
   sidebarTemplate(sideBar);
   footerTemplate(footerContainer);
-  clientsLogosTemplate(brandWrapper);
   processBarTemplate(processBar);
   addPhone();
   servicePageTemplate(servicePageContainer);
@@ -559,7 +545,6 @@ document.addEventListener("DOMContentLoaded", () => {
   changePathForServicePage(pathChangeServiePage);
   portfolioTemplate(projectCardsContainer);
   formFieldsTemplate(formDataContainer);
-  // clientsLogosTemplate(marqueeContainer);
   clientsLogosTemplateGrid(gridClients);
   homePageService(homePageServiceContainer);
 });

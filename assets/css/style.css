@@ -58,19 +58,6 @@
   --color-light-heading: #181c32;
   --color-light-body: #65676b;
   --color-border-white: #00000024;
-  --color-success: #3eb75e;
-  --color-danger: #ff0003;
-  --color-warning: #ff8f3c;
-  --color-info: #1ba2db;
-  --color-facebook: #3b5997;
-  --color-twitter: #1ba1f2;
-  --color-youtube: #ed4141;
-  --color-linkedin: #0077b5;
-  --color-pinterest: #e60022;
-  --color-instagram: #c231a1;
-  --color-vimeo: #00adef;
-  --color-twitch: #6441a3;
-  --color-discord: #7289da;
   --p-light: 300;
   --p-regular: 400;
   --p-medium: 500;
@@ -1043,7 +1030,7 @@ body {
 }
 
 .title-area {
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .title-area span {
@@ -1056,7 +1043,7 @@ body {
 .title-area .title {
   text-transform: capitalize;
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -7381,6 +7368,7 @@ p.disc {
 @media only screen and (max-width: 767px) {
   .footer-right-three {
     flex-wrap: wrap;
+    margin-top: 10px;
   }
 }
 
@@ -7407,6 +7395,7 @@ p.disc {
 @media only screen and (max-width: 1199px) {
   .footer-right-three .single-footer-three-wized .body {
     padding: 25px 10px;
+    padding-top: 10px;
   }
 }
 
