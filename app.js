@@ -415,9 +415,7 @@ const mainMenuTemplate = (parientContainer) => {
       subMenuLink.classList.add("submenu");
       menu.subMenu.forEach((subMenu) => {
         const subMenuLinkRef = document.createElement("li");
-        subMenuLinkRef.innerHTML = `<a class="single" href="${
-          htmlExtention ? subMenu.link : subMenu.link + ".html"
-        }">${subMenu.name}</a>`;
+        subMenuLinkRef.innerHTML = `<a class="single" href="${subMenu.link}.html">${subMenu.name}</a>`;
         subMenuLink.appendChild(subMenuLinkRef);
       });
       menuLink.appendChild(subMenuLink);

@@ -37,7 +37,7 @@ const mainServices = [
 const mainMenu = [
   {
     name: "Home",
-    link: "/",
+    link: "/index",
   },
   {
     name: "About Us",
