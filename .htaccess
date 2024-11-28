@@ -1,0 +1,32 @@
+#Optimize Browser Caching for Faster Website Load Times
+ExpiresActive On
+ExpiresDefault "access plus 1 month"
+# Cache CSS, JavaScript, and HTML files for 1 week
+ExpiresByType text/css "access plus 1 week"
+ExpiresByType application/javascript "access plus 1 week"
+ExpiresByType text/html "access plus 1 week"
+# Cache image files for 1 month
+ExpiresByType image/jpeg "access plus 1 month"
+ExpiresByType image/png "access plus 1 month"
+ExpiresByType image/gif "access plus 1 month"
+ExpiresByType image/svg+xml "access plus 1 month"
+# Cache video and audio files for 1 year
+ExpiresByType video/mp4 "access plus 1 year"
+ExpiresByType video/ogg "access plus 1 year"
+ExpiresByType audio/ogg "access plus 1 year"
+# Cache web fonts for 1 year
+ExpiresByType application/font-woff "access plus 1 year"
+ExpiresByType application/font-woff2 "access plus 1 year"
+ExpiresByType application/vnd.ms-fontobject "access plus 1 year"
+ExpiresByType application/x-font-ttf "access plus 1 year"
+ExpiresByType font/opentype "access plus 1 year"
+# Cache various other file types
+ExpiresByType application/pdf "access plus 1 month"
+ExpiresByType application/x-shockwave-flash "access plus 1 month"
+ExpiresByType application/x-web-app-manifest+json "access plus 1 month"
+ExpiresByType text/cache-manifest "access plus 1 month"
+ExpiresByType application/xml "access plus 1 week"
+ExpiresByType text/xml "access plus 1 week"
+ExpiresByType application/atom+xml "access plus 1 week"
+ExpiresByType application/rss+xml "access plus 1 week"
+#End of Browser Caching
