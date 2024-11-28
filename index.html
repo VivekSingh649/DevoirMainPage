@@ -26,6 +26,11 @@
     <link rel="stylesheet" href="assets/css/plugins/animate.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/style-2.css" />
+    <script>
+      document.querySelectorAll("img").forEach((img) => {
+        img.setAttribute("loading", "lazy");
+      });
+    </script>
   </head>
 
   <body class="homepage">
@@ -55,7 +60,7 @@
           </div>
           <div class="col-lg-6">
             <video
-              src="./assets/logo/DD-Logo-Animation.mp4"
+              src="./assets/logo/DD-Logo-Animation.gif"
               autoplay
               muted
             ></video>

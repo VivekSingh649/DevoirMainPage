@@ -21,3 +21,7 @@ gsap.utils.toArray(".scroll-text").forEach((textRow, index) => {
     },
   });
 });
+
+document.querySelectorAll("img").forEach((img) => {
+  img.setAttribute("loading", "lazy");
+});
