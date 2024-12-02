@@ -408,7 +408,7 @@ const mainMenuTemplate = (parientContainer) => {
   }
   mainMenu.forEach((menu) => {
     const menuLink = document.createElement("li");
-    menuLink.innerHTML = `<a href="${menu.link}.html">${menu.name}</a>`;
+    menuLink.innerHTML = `<a href="${menu.link}">${menu.name}</a>`;
     if (menu.subMenu) {
       menuLink.classList.add("has-droupdown");
       let subMenuLink = document.createElement("ul");

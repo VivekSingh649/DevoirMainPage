@@ -37,25 +37,25 @@ const mainServices = [
 const mainMenu = [
   {
     name: "Home",
-    link: "/index",
+    link: "/index.html",
   },
   {
     name: "About Us",
-    link: "/about-us",
+    link: "/about-us.html",
   },
   {
     name: "Our Services",
-    link: "/our-services",
+    link: "/our-services.html",
     subMenu: [
-      { name: "Branding", link: "/service/branding" },
-      { name: "Marketing", link: "/service/marketing" },
-      { name: "Designing", link: "/service/designing" },
-      { name: "Web Development", link: "/service/web-development" },
+      { name: "Branding", link: "/service/branding.html" },
+      { name: "Marketing", link: "/service/marketing.html" },
+      { name: "Designing", link: "/service/designing.html" },
+      { name: "Web Development", link: "/service/web-development.html" },
     ],
   },
   {
     name: "Contact Us",
-    link: "/contact-us",
+    link: "/contact-us.html",
   },
   {
     name: "Portfolio",
