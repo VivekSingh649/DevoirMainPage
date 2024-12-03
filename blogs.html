@@ -685,7 +685,7 @@
                   alt="Business-Blog"
                 />
               </div>
-              <div class="blog-listing-content">
+              <div class="blog-listing-content" id="blog-details">
                 <div class="user-info">
                   <!-- single info -->
                   <div class="single">
@@ -1472,5 +1472,46 @@
     <!-- main Js -->
     <script src="assets/js/main.js"></script>
     <!-- scripts end form hear -->
+     <script>
+      // Function to fetch a blog post by its slug
+const fetchBlogBySlug = async (slug) => {
+  try {
+    const response = await fetch(`https://resolverights.com/wp-json/wp/v2/posts?slug=${slug}`);
+    const blogs = await response.json();
+    if (blogs.length > 0) {
+      return blogs[0]; // Return the first matched blog
+    }
+    throw new Error("Blog not found");
+  } catch (error) {
+    console.error("Error fetching blog by slug:", error);
+    return null;
+  }
+};
+
+// Function to render the blog details
+const renderBlogDetails = async () => {
+  const path = window.location.pathname; // Get the current path
+  const slug = path.split("/").pop(); // Extract the slug (last part of the URL)
+
+  const blog = await fetchBlogBySlug(slug);
+  if (blog) {
+    document.title = blog.title.rendered; // Set the page title
+
+    const blogDetailsContainer = document.getElementById("blog-details");
+    blogDetailsContainer.innerHTML = `
+      <h1>${blog.title.rendered}</h1>
+      <div>${blog.content.rendered}</div>
+    `;
+  } else {
+    document.getElementById("blog-details").innerHTML = "<p>Blog not found</p>";
+  }
+};
+
+// Call this function on page load
+if (window.location.pathname.startsWith("/blogs/")) {
+  renderBlogDetails();
+}
+     </script>
+     
   </body>
 </html>
