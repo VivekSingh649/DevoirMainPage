@@ -1,5 +1,23 @@
 {
+  "name": "devoir-web",
+  "version": "1.0.0",
   "devDependencies": {
-    "purgecss": "^6.0.0"
+    "purgecss": "^6.0.0",
+    "terser": "^5.19.2",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "imagemin": "^8.0.1",
+    "lazysizes": "^5.3.2",
+    "clean-css-cli": "^5.6.2",
+    "concat": "^1.0.3",
+    "npm-run-all": "^4.1.5"
+  },
+  "scripts": {
+    "build:js": "webpack --mode production",
+    "build:css": "npm-run-all css:concat css:minify",
+    "css:concat": "concat -o dist/css/styles.css assets/css/plugins/fontawesome-5.css assets/css/plugins/unicons.css assets/css/vendor/bootstrap.min.css assets/css/plugins/animate.min.css assets/css/style.css assets/css/style-2.css",
+    "css:minify": "cleancss -o dist/css/styles.min.css dist/css/styles.css",
+    "build": "npm-run-all build:*",
+    "optimize-images": "imagemin assets/images/* --out-dir=dist/images"
   }
 }

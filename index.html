@@ -746,12 +746,16 @@
     <script src="assets/js/main.js"></script>
     <!-- my custom js  -->
     <script src="assets/js/dynamicData.js"></script>
-    <script src="app.js"></script>
+    <!-- <script src="app.js"></script> -->
     <!-- GSAP JS  -->
     <script src="gsap.js"></script>
+    <script src="dist/optimize.bundle.js" defer></script>
+    <script src="dist/main.bundle.js" defer></script>
     <script>
-      document.querySelectorAll("img").forEach((img) => {
-        img.setAttribute("loading", "lazy");
+      document.addEventListener('DOMContentLoaded', function() {
+        if (window.DevoirOptimize) {
+          window.DevoirOptimize.initializeLazyLoading();
+        }
       });
     </script>
   </body>
