@@ -122,55 +122,55 @@ const portFolio = [
     name: "Oneiro Education",
     keyword: "Branding, Strategy, Art Design, Marketing",
     link: "https://oneiroeducation.com/",
-    image: "./assets/projects/onerio.webp",
+    image: "https://ddlanding.netlify.app/assets/projects/onerio.webp",
   },
   {
     name: "Deepmala Sarees",
     keyword: "Branding, Strategy,Art Design, Marketing",
     link: "https://www.instagram.com/deepmalasarees/",
-    image: "./assets/projects/deepmala.webp",
+    image: "https://ddlanding.netlify.app/assets/projects/deepmala.webp",
   },
   {
     name: "On Woods Products",
     keyword: "Branding, Strategy, Art Design, Marketing",
     link: "https://onwoodproducts.co/",
-    image: "./assets/projects/onwoods.png",
+    image: "https://ddlanding.netlify.app/assets/projects/onwoods.png",
   },
   {
     name: "Resolve Rights",
     keyword: "Branding, Strategy, Art Design, Marketing",
     link: "https://onwoodproducts.co/",
-    image: "./assets/projects/resolve-right.png",
+    image: "https://ddlanding.netlify.app/assets/projects/resolve-right.png",
   },
   {
     name: "Hartansh Official",
     keyword: "Branding, Strategy, Art Design, Marketing",
     link: "https://www.instagram.com/hartansh.official/",
-    image: "./assets/projects/hartansh.official.webp",
+    image: "https://ddlanding.netlify.app/assets/projects/hartansh.official.webp",
   },
   {
     name: "Neumaticoshuecha",
     keyword: "Branding, Web Development, Marketing",
     link: "https://www.neumaticoshuecha.com/",
-    image: "./assets/projects/neumaticoshuecha.webp",
+    image: "https://ddlanding.netlify.app/assets/projects/neumaticoshuecha.webp",
   },
   {
     name: "Curagers",
     keyword: "Branding, Strategy, Art Design, Marketing",
     link: "https://curagers.com/",
-    image: "./assets/projects/curagers.webp",
+    image: "https://ddlanding.netlify.app/assets/projects/curagers.webp",
   },
   {
     name: "Kabsons Global",
     keyword: "Branding, Web Mangment, Marketing",
     link: "https://kabsonsglobal.com/",
-    image: "./assets/projects/kaptions.webp",
+    image: "https://ddlanding.netlify.app/assets/projects/kaptions.webp",
   },
 ];
 
 const logoCount = 55;
 const logos = Array.from(
   { length: logoCount },
-  (_, i) => `assets/logo/logo-${i + 1}.webp`
+  (_, i) => `https://ddlanding.netlify.app/assets/logo/logo-${i + 1}.webp`
 );
 console.log(logos);
