@@ -265,42 +265,6 @@ const sidebarTemplate = (sidebarElement) => {
       `;
   header.insertAdjacentElement("afterend", sidebarElement);
 };
-// Cliets Section Building
-const clientsLogosSwiper = (parentContainer) => {
-  if (!parentContainer) {
-    console.log("Swiper container not found", parentContainer);
-    return;
-  }
-  const swiperWrapper = parentContainer.querySelector(".swiper-wrapper");
-
-  logos.forEach((logoSrc, index) => {
-    const deleteLogo = [4, 17];
-    if (deleteLogo.includes(index + 1)) return false;
-    const slide = document.createElement("div");
-    slide.classList.add("swiper-slide");
-
-    const img = document.createElement("img");
-    img.src = logoSrc;
-    img.alt = `Brand Logo ${index + 1}`;
-    img.classList.add("logo");
-
-    slide.appendChild(img);
-    swiperWrapper.appendChild(slide);
-  });
-
-  new Swiper(parentContainer, {
-    spaceBetween: 0,
-    centeredSlides: true,
-    speed: 1500,
-    autoplay: {
-      delay: 0,
-    },
-    loop: true,
-    slidesPerView: "auto",
-    allowTouchMove: false,
-    disableOnInteraction: true,
-  });
-};
 
 // Cliets Section Building
 const clientsLogosTemplateGrid = (parientContainer) => {
@@ -466,6 +430,7 @@ const portfolioTemplate = (parientContainer) => {
               </div>
             </div>
     `;
+    console.log(project.image)
     parientContainer.appendChild(projectElment);
   });
 };
