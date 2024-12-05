@@ -1,6 +1,6 @@
 .home_banner {
     width: 100%;
-    background-color: var(--color-heading-1);
+    background-color: #111;
 
     .row {
         padding-top: 80px;
@@ -523,4 +523,9 @@
         display: none;
     }
 
+}
+
+#clients-logo-grid {
+    display: grid !important;
+    grid-template-columns: repeat(5, 1fr);
 }

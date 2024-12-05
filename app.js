@@ -94,15 +94,15 @@ const footerTemplate = (footerElement) => {
                                            <li data-sal-delay="150" data-sal="slide-up" data-sal-duration="800"
                                                class="sal-animate"><a target="_blank"
                                                    href="https://www.facebook.com/devoirdesignsofficial"><i
-                                                       class="fab fa-facebook-f"></i></a></li>
+                                                       class="bi bi-facebook"></i></a></li>
                                            <li data-sal-delay="250" data-sal="slide-up" data-sal-duration="800"
                                                class="sal-animate"><a target="_blank"
                                                    href="https://www.instagram.com/devoirdesigns/"><i
-                                                       class="fab fa-instagram"></i></a></li>
+                                                       class="bi bi-instagram"></i></a></li>
                                            <li data-sal-delay="350" data-sal="slide-up" data-sal-duration="800"
                                                class="sal-animate"><a target="_blank"
                                                    href="https://www.linkedin.com/company/devoir-designs/"><i
-                                                       class="fab fa-linkedin-in"></i></a></li>
+                                                       class="bi bi-linkedin"></i></a></li>
            
                                        </ul>
                                    </div>
@@ -121,15 +121,15 @@ const footerTemplate = (footerElement) => {
                                            <ul class="list">
                                                <li>
                                                    <a href="/service/branding.html">
-                                                   <i class="far fa-chevron-double-right"></i>Branding</a>
+                                                   <i class="bi bi-chevron-double-right"></i>Branding</a>
                                                </li>
-                                               <li><a href="/service/marketing.html"><i class="far fa-chevron-double-right"></i>Digital
+                                               <li><a href="/service/marketing.html"><i class="bi bi-chevron-double-right"></i>Digital
                                                        Marketing</a>
                                                </li>
-                                               <li><a href="/service/web-development.html"><i class="far fa-chevron-double-right"></i>Web
+                                               <li><a href="/service/web-development.html"><i class="bi bi-chevron-double-right"></i>Web
                                                        Development</a>
                                                </li>
-                                               <li><a href="/service/designing.html"><i class="far fa-chevron-double-right"></i>Graphic
+                                               <li><a href="/service/designing.html"><i class="bi bi-chevron-double-right"></i>Graphic
                                                        Designing</a>
                                                </li>
                                            </ul>
@@ -145,7 +145,7 @@ const footerTemplate = (footerElement) => {
                                        <div class="body">
                                            <div class="rts-footer-contact">
                                                <div class="icon">
-                                                   <i class="fas fa-map-marker-alt"></i>
+                                                   <i class="bi bi-geo-alt-fill"></i>
                                                </div>
                                                <a href="#" class="map">
                                                    3, First Floor Nilgiri
@@ -155,7 +155,7 @@ const footerTemplate = (footerElement) => {
                                            </div>
                                            <div class="rts-footer-contact">
                                                <div class="icon">
-                                                   <i class="fas fa-phone-alt"></i>
+                                                   <i class="bi bi-telephone-fill"></i>
                                                </div>
                                                <a href="__phone_num" class="call">
                                                    +91 9811173841
@@ -163,7 +163,7 @@ const footerTemplate = (footerElement) => {
                                            </div>
                                            <div class="rts-footer-contact">
                                                <div class="icon">
-                                                   <i class="fas fa-envelope"></i>
+                                                   <i class="bi bi-envelope-arrow-down-fill"></i>
                                                </div>
                                                <a href="mailto:info@devoirdesigns.com" class="call">
                                                    info@devoirdesigns.com
@@ -205,11 +205,11 @@ const sidebarTemplate = (sidebarElement) => {
                     <div class="social-wrapper-two">
                         <ul class="social-area">
                             <li data-sal-delay="150" data-sal="slide-up" data-sal-duration="800" class="sal-animate"><a
-                                    target="_blank" href="https://www.facebook.com/devoirdesignsofficial"><i class="fab fa-facebook-f"></i></a></li>
+                                    target="_blank" href="https://www.facebook.com/devoirdesignsofficial"><i class="bi bi-facebook"></i></a></li>
                             <li data-sal-delay="350" data-sal="slide-up" data-sal-duration="800" class="sal-animate"><a
-                                    target="_blank" href="https://www.linkedin.com/company/devoir-designs/"><i class="fab fa-linkedin-in"></i></a></li>
+                                    target="_blank" href="https://www.linkedin.com/company/devoir-designs/"><i class="bi bi-linkedin"></i></a></li>
                             <li data-sal-delay="450" data-sal="slide-up" data-sal-duration="800" class="sal-animate"><a
-                                    target="_blank" href="https://www.instagram.com/devoirdesigns/"><i class="fab fa-instagram"></i></a></li>
+                                    target="_blank" href="https://www.instagram.com/devoirdesigns/"><i class="bi bi-instagram"></i></a></li>
                         </ul>
                     </div>
                     <div class="get-in-touch mt--50">
@@ -219,13 +219,13 @@ const sidebarTemplate = (sidebarElement) => {
                         <div class="wrapper">
                             <!-- single -->
                             <div class="single">
-                                <i class="fas fa-phone-alt"></i>
+                                <i class="bi bi-telephone-fill"></i>
                                 <a href="__phone_num">+91 9811173841</a>
                             </div>
                             <!-- single ENd -->
                             <!-- single -->
                             <div class="single">
-                                <i class="fas fa-envelope"></i>
+                                <i class="bi bi-envelope-arrow-down-fill"></i>
                                 <a href="mailto:info@devoirdesigns.com">info@devoirdesigns.com</a>
                             </div>
                             <!-- single ENd -->
@@ -237,7 +237,7 @@ const sidebarTemplate = (sidebarElement) => {
                             <!-- single ENd -->
                             <!-- single -->
                             <div class="single">
-                                <i class="fas fa-map-marker-alt"></i>
+                                <i class="bi bi-geo-alt-fill"></i>
                                 <a href="#">3, First Floor Nilgiri Shopping Complex, New Delhi - 110019</a>
                             </div>
                             <!-- single ENd -->
@@ -251,11 +251,11 @@ const sidebarTemplate = (sidebarElement) => {
                     <div class="social-wrapper-two mt--50">
                         <ul class="social-area">
                              <li data-sal-delay="150" data-sal="slide-up" data-sal-duration="800" class="sal-animate"><a
-                                    target="_blank" href="https://www.facebook.com/devoirdesignsofficial"><i class="fab fa-facebook-f"></i></a></li>
+                                    target="_blank" href="https://www.facebook.com/devoirdesignsofficial"><i class="bi bi-facebook"></i></a></li>
                             <li data-sal-delay="350" data-sal="slide-up" data-sal-duration="800" class="sal-animate"><a
-                                    target="_blank" href="https://www.linkedin.com/company/devoir-designs/"><i class="fab fa-linkedin-in"></i></a></li>
+                                    target="_blank" href="https://www.linkedin.com/company/devoir-designs/"><i class="bi bi-linkedin"></i></a></li>
                             <li data-sal-delay="450" data-sal="slide-up" data-sal-duration="800" class="sal-animate"><a
-                                    target="_blank" href="https://www.instagram.com/devoirdesigns/"><i class="fab fa-instagram"></i></a></li>
+                                    target="_blank" href="https://www.instagram.com/devoirdesigns/"><i class="bi bi-instagram"></i></a></li>
                         </ul>
                     </div>
                     <!-- <a href="__phone_num" class="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btnmenu">Get Quote</a> -->
@@ -461,7 +461,7 @@ const portfolioTemplate = (parientContainer) => {
                 <h3 class="c-light">${project.name}</h3>
                 <p class="c-light">${project.keyword}</p>
                 <a href="${project.link}" target="_blank" class="link_badge">
-                  <i class="far fa-arrow-right"></i>
+                  <i class="bi bi-arrow-right"></i>
                 </a>
               </div>
             </div>
@@ -518,7 +518,7 @@ const homePageService = (parientContainer) => {
                 ${service.content}
               </p>
               <a href="${service.link}" class="rts-read-more two"
-                >Read More<i class="far fa-arrow-right"></i
+                >Read More<i class="bi bi-arrow-right"></i
               ></a>
             </div>
             <!-- single service area end -->

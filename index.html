@@ -22,9 +22,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="canonical" href="https://devoirdesigns.com/" />
-    <link rel="stylesheet" href="assets/css/plugins/fontawesome-5.css" />
-    <link rel="stylesheet" href="assets/css/plugins/unicons.css" />
-    <!-- <link rel="stylesheet" href="assets/css/plugins/metismenu.css" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/plugins/animate.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -437,7 +435,7 @@
                   <ul>
                     <li>
                       <a href="#">
-                        <i class="fab fa-linkedin-in"></i>
+                        <i class="bi bi-linkedin"></i>
                       </a>
                     </li>
                   </ul>
@@ -479,7 +477,7 @@
                   <ul>
                     <li>
                       <a href="#">
-                        <i class="fab fa-linkedin-in"></i>
+                        <i class="bi bi-linkedin"></i>
                       </a>
                     </li>
                   </ul>
@@ -746,16 +744,12 @@
     <script src="assets/js/main.js"></script>
     <!-- my custom js  -->
     <script src="assets/js/dynamicData.js"></script>
-    <!-- <script src="app.js"></script> -->
+    <script src="app.js"></script>
     <!-- GSAP JS  -->
     <script src="gsap.js"></script>
-    <script src="dist/optimize.bundle.js" defer></script>
-    <script src="dist/main.bundle.js" defer></script>
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        if (window.DevoirOptimize) {
-          window.DevoirOptimize.initializeLazyLoading();
-        }
+      document.querySelectorAll("img").forEach((img) => {
+        img.setAttribute("loading", "lazy");
       });
     </script>
   </body>
