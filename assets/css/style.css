@@ -5074,7 +5074,7 @@ xclip
  }
 
  .breadcrumb-bg {
-   background-image: url(../images/breadcrumb/breadcrumbs.svg);
+   background-image: url("https://ddlanding.netlify.app/assets/images/breadcrumb/breadcrumbs.svg");
  }
 
  @media only screen and (max-width: 767px) {

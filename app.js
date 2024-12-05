@@ -192,7 +192,7 @@ const footerTemplate = (footerElement) => {
 // SideBar Building
 const sidebarTemplate = (sidebarElement) => {
   sidebarElement.innerHTML = `
-              <button class="close-icon-menu"><i class="far fa-times"></i></button>
+              <button class="close-icon-menu"><i class="bi bi-x-lg"></i></button>
             <!-- inner menu area desktop start -->
             <div class="rts-sidebar-menu-desktop">
                 <a class="logo-1" href="index.html">
@@ -415,7 +415,7 @@ const mainMenuTemplate = (parientContainer) => {
       subMenuLink.classList.add("submenu");
       menu.subMenu.forEach((subMenu) => {
         const subMenuLinkRef = document.createElement("li");
-        subMenuLinkRef.innerHTML = `<a class="single" href="${subMenu.link}.html">${subMenu.name}</a>`;
+        subMenuLinkRef.innerHTML = `<a class="single" href="${subMenu.link}">${subMenu.name}</a>`;
         subMenuLink.appendChild(subMenuLinkRef);
       });
       menuLink.appendChild(subMenuLink);
@@ -527,6 +527,15 @@ const homePageService = (parientContainer) => {
   });
 };
 
+ function addScript(array) {
+  array.forEach((url)=>{
+    let script = document.createElement("script")
+    script.src = url;
+    script.type = "application/javascript"
+    document.body.insertAdjacentElement("beforeend", url)
+  })
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   headerTemplate(header);
   sidebarTemplate(sideBar);
@@ -542,5 +551,5 @@ document.addEventListener("DOMContentLoaded", () => {
   formFieldsTemplate(formDataContainer);
   clientsLogosTemplateGrid(gridClients);
   homePageService(homePageServiceContainer);
-  console.log("loading")
+  addScript(scripts)
 });

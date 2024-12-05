@@ -1,7 +1,7 @@
 const mainServices = [
   {
     name: "Branding",
-    thumbnail: "./assets/images/service/branding.webp",
+    thumbnail: "https://ddlanding.netlify.app/assets/images/service/branding.webp",
     icon: "assets/images/service/09.svg",
     link: "service/branding.html",
     content:
@@ -9,7 +9,7 @@ const mainServices = [
   },
   {
     name: "Marketing",
-    thumbnail: "./assets/images/service/marketing.webp",
+    thumbnail: "https://ddlanding.netlify.app/assets/images/service/marketing.webp",
     link: "service/service-details.html",
     icon: "assets/images/service/10.svg",
     content:
@@ -17,7 +17,7 @@ const mainServices = [
   },
   {
     name: "Designing",
-    thumbnail: "./assets/images/service/graphic design.webp",
+    thumbnail: "https://ddlanding.netlify.app/assets/images/service/graphic design.webp",
     link: "service/service-details.html",
     icon: "assets/images/service/11.svg",
     content:
@@ -25,7 +25,7 @@ const mainServices = [
   },
   {
     name: "Web Development",
-    thumbnail: "./assets/images/service/Web-developemt.webp",
+    thumbnail: "https://ddlanding.netlify.app/assets/images/service/Web-developemt.webp",
     link: "service/service-details.html",
     icon: "assets/images/service/12.svg",
     content: `Transforming visions into digital realities, our website design
@@ -167,6 +167,11 @@ const portFolio = [
     image: "https://ddlanding.netlify.app/assets/projects/kaptions.webp",
   },
 ];
+
+const scripts = [
+  "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js",
+  "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+]
 
 const logoCount = 55;
 const logos = Array.from(
