@@ -1,0 +1,1 @@
+(()=>{const o=Array.from({length:55},((o,l)=>`assets/logo/logo-${l+1}.webp`));console.log(o)})();
