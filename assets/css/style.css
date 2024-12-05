@@ -6917,7 +6917,7 @@ xclip
  }
 
  .rts-callto-acation-area4 {
-   background-image: url(../images/cta/05.jpg);
+   background-image: url("https://ddlanding.netlify.app/assets/images/cta/05.jpg");
    background-repeat: no-repeat;
    background-position: center;
    object-fit: contain;
@@ -7660,7 +7660,7 @@ xclip
  }
 
  .rts-appoinment-bg {
-   background-image: url(../images/appoinment/bg-01.svg);
+   background-image: url("https://ddlanding.netlify.app/assets/images/appoinment/bg-01.svg");
    background-size: cover;
    background-repeat: no-repeat;
  }

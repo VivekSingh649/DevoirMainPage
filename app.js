@@ -542,4 +542,5 @@ document.addEventListener("DOMContentLoaded", () => {
   formFieldsTemplate(formDataContainer);
   clientsLogosTemplateGrid(gridClients);
   homePageService(homePageServiceContainer);
+  console.log("loading")
 });
