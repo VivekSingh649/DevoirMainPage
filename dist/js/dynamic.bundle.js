@@ -1,1 +1,1 @@
-(()=>{const l=Array.from({length:55},((l,o)=>`https://ddlanding.netlify.app/.netlify/images?url?assets/logo/logo-${o+1}.webp`));console.log(l)})();
+(()=>{const l=Array.from({length:55},((l,o)=>`https://ddlanding.netlify.app/.netlify/images?url=assets/logo/logo-${o+1}.webp`));console.log(l)})();

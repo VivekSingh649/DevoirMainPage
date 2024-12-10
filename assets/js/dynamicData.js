@@ -58,6 +58,10 @@ const mainMenu = [
     link: "/contact-us.html",
   },
   {
+    name: "Blogs",
+    link: "/blogs.html",
+  },
+  {
     name: "Portfolio",
     link: "https://portfolio.devoirdesigns.com/",
   },
@@ -120,51 +124,51 @@ const formStructure = [
 const portFolio = [
   {
     name: "Oneiro Education",
-    keyword: "Branding, Strategy, Art Design, Marketing",
+    keyword: "Art Design, Marketing, Web Development",
     link: "https://oneiroeducation.com/",
-    image: "https://ddlanding.netlify.app/.netlify/images?url?=assets/projects/onerio.webp",
+    image: "https://ddlanding.netlify.app/.netlify/images?url=assets/projects/onerio.webp",
   },
   {
     name: "Deepmala Sarees",
-    keyword: "Branding, Strategy,Art Design, Marketing",
+    keyword: "Branding, Art Design, Marketing",
     link: "https://www.instagram.com/deepmalasarees/",
-    image: "https://ddlanding.netlify.app/.netlify/images?url?=assets/projects/deepmala.webp",
+    image: "https://ddlanding.netlify.app/.netlify/images?url=assets/projects/deepmala.webp",
   },
   {
     name: "On Woods Products",
-    keyword: "Branding, Strategy, Art Design, Marketing",
+    keyword: "Branding, Strategy, Art Design, Marketing, Web Development",
     link: "https://onwoodproducts.co/",
-    image: "https://ddlanding.netlify.app/.netlify/images?url?=assets/projects/onwoods.png",
+    image: "https://ddlanding.netlify.app/.netlify/images?url=assets/projects/onwoods.png",
   },
   {
     name: "Resolve Rights",
-    keyword: "Branding, Strategy, Art Design, Marketing",
+    keyword: "Branding, Strategy, Art Design, Marketing, Web Development",
     link: "https://onwoodproducts.co/",
-    image: "https://ddlanding.netlify.app/.netlify/images?url?=assets/projects/resolve-right.png",
+    image: "https://ddlanding.netlify.app/.netlify/images?url=assets/projects/resolve-right.png",
   },
   {
     name: "Hartansh Official",
-    keyword: "Branding, Strategy, Art Design, Marketing",
+    keyword: "Branding, Art Design, Marketing, Web Development",
     link: "https://www.instagram.com/hartansh.official/",
-    image: "https://ddlanding.netlify.app/.netlify/images?url?=assets/projects/hartansh.official.webp",
+    image: "https://ddlanding.netlify.app/.netlify/images?url=assets/projects/hartansh.official.webp",
   },
   {
     name: "Neumaticoshuecha",
     keyword: "Branding, Web Development, Marketing",
     link: "https://www.neumaticoshuecha.com/",
-    image: "https://ddlanding.netlify.app/.netlify/images?url?=assets/projects/neumaticoshuecha.webp",
+    image: "https://ddlanding.netlify.app/.netlify/images?url=assets/projects/neumaticoshuecha.webp",
   },
   {
     name: "Curagers",
-    keyword: "Branding, Strategy, Art Design, Marketing",
+    keyword: "Art Design, Marketing, Web Development",
     link: "https://curagers.com/",
-    image: "https://ddlanding.netlify.app/.netlify/images?url?=assets/projects/curagers.webp",
+    image: "https://ddlanding.netlify.app/.netlify/images?url=assets/projects/curagers.webp",
   },
   {
     name: "Kabsons Global",
     keyword: "Branding, Web Mangment, Marketing",
     link: "https://kabsonsglobal.com/",
-    image: "https://ddlanding.netlify.app/.netlify/images?url?=assets/projects/kaptions.webp",
+    image: "https://ddlanding.netlify.app/.netlify/images?url=assets/projects/kaptions.webp",
   },
 ];
 
@@ -176,6 +180,6 @@ const scripts = [
 const logoCount = 55;
 const logos = Array.from(
   { length: logoCount },
-  (_, i) => `https://ddlanding.netlify.app/.netlify/images?url?assets/logo/logo-${i + 1}.webp`
+  (_, i) => `https://ddlanding.netlify.app/.netlify/images?url=assets/logo/logo-${i + 1}.webp`
 );
 console.log(logos);

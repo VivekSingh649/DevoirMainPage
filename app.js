@@ -231,14 +231,14 @@ const sidebarTemplate = (sidebarElement) => {
                             <!-- single ENd -->
                             <!-- single -->
                             <div class="single">
-                                <i class="fas fa-globe"></i>
-                                <a href="https://portfolio.devoirdesigns.com/">Portfolio</a>
+                                <i class="bi bi-geo-alt-fill"></i>
+                                <a href="#">3, First Floor Nilgiri Shopping Complex, New Delhi - 110019</a>
                             </div>
                             <!-- single ENd -->
                             <!-- single -->
                             <div class="single">
-                                <i class="bi bi-geo-alt-fill"></i>
-                                <a href="#">3, First Floor Nilgiri Shopping Complex, New Delhi - 110019</a>
+                                <i class="bi bi-collection"></i>
+                                <a href="https://portfolio.devoirdesigns.com/">Portfolio</a>
                             </div>
                             <!-- single ENd -->
                         </div>
