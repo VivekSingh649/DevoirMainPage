@@ -36,7 +36,7 @@ const headerTemplate = (headerElement) => {
                     <div class="col-lg-2 col-md-3 col-4">
                         <!-- logo area start -->
                         <a href="/" class="thumbnail">
-                            <img class="normal" src="assets/logo/logo-white.png" alt="axela-logo">
+                            <img class="normal" src="https://ddlanding.netlify.app/assets/logo/logo-white.png" alt="axela-logo">
                         </a>
                         <!-- logo area end -->
                     </div>

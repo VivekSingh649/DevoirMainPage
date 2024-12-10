@@ -58,13 +58,25 @@
     font-weight: 400;
 }
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .scroll-container {
     overflow: hidden;
 
     .scroll-text {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         gap: 20px;
+        -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
         white-space: nowrap;
         font-weight: bold;
@@ -75,6 +87,7 @@
             translate: none;
             rotate: none;
             scale: none;
+            -webkit-transform: translate(-100.7621%, 0%) translate3d(0px, 0px, 0px);
             transform: translate(-100.7621%, 0%) translate3d(0px, 0px, 0px);
         }
 
@@ -83,6 +96,7 @@
             translate: none;
             rotate: none;
             scale: none;
+            -webkit-transform: translate(-100.7621%, 0%) translate3d(0px, 0px, 0px);
             transform: translate(-100.7621%, 0%) translate3d(0px, 0px, 0px);
         }
 
