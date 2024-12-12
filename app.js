@@ -430,7 +430,6 @@ const portfolioTemplate = (parientContainer) => {
               </div>
             </div>
     `;
-    console.log(project.image)
     parientContainer.appendChild(projectElment);
   });
 };
@@ -450,7 +449,6 @@ const formFieldsTemplate = (parientContainer) => {
     inputField.type = field.type;
     inputField.placeholder = field.placeHolder;
     inputField.required = field.required;
-    console.log(inputField);
     parientContainer.appendChild(inputField);
   });
 };
@@ -492,14 +490,6 @@ const homePageService = (parientContainer) => {
   });
 };
 
- function addScript(array) {
-  array.forEach((url)=>{
-    let script = document.createElement("script")
-    script.src = url;
-    script.type = "application/javascript"
-    document.body.insertAdjacentElement("beforeend", url)
-  })
-}
 
 document.addEventListener("DOMContentLoaded", () => {
   headerTemplate(header);
@@ -516,5 +506,4 @@ document.addEventListener("DOMContentLoaded", () => {
   formFieldsTemplate(formDataContainer);
   clientsLogosTemplateGrid(gridClients);
   homePageService(homePageServiceContainer);
-  addScript(scripts)
 });

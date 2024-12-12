@@ -59,7 +59,7 @@ const mainMenu = [
   },
   {
     name: "Blogs",
-    link: "/blogs.html",
+    link: "/blogs",
   },
   {
     name: "Portfolio",
@@ -147,7 +147,7 @@ const portFolio = [
     image: "https://ddlanding.netlify.app/.netlify/images?url=assets/projects/resolve-right.png",
   },
   {
-    name: "Hartansh Official",
+    name: "Hartansh",
     keyword: "Branding, Art Design, Marketing, Web Development",
     link: "https://www.instagram.com/hartansh.official/",
     image: "https://ddlanding.netlify.app/.netlify/images?url=assets/projects/hartansh.official.webp",
@@ -171,15 +171,8 @@ const portFolio = [
     image: "https://ddlanding.netlify.app/.netlify/images?url=assets/projects/kaptions.webp",
   },
 ];
-
-const scripts = [
-  "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js",
-  "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
-]
-
 const logoCount = 55;
 const logos = Array.from(
   { length: logoCount },
   (_, i) => `https://ddlanding.netlify.app/.netlify/images?url=assets/logo/logo-${i + 1}.webp`
 );
-console.log(logos);

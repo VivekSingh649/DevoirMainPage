@@ -6861,7 +6861,8 @@ xclip
  }
 
  .blog-grid-inner .blog-body {
-   padding: 30px;
+   padding: 20px;
+   padding-bottom: 10px;
  }
 
  .blog-grid-inner .blog-body a:hover .title {
