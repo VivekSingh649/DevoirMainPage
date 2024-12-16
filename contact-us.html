@@ -216,7 +216,7 @@
           </div>
           <div class="form-wrapper">
             <div id="form-messages"></div>
-            <form id="contact-form" action="mailer.php" method="post">
+            <form class="contact-form">
               <div class="name-email">
                 <input
                   type="text"
@@ -231,11 +231,13 @@
                   required
                 />
               </div>
+              <input type="text" name="number" placeholder="Phone Number" required />
               <input type="text" name="subject" placeholder="Your Subject" />
               <textarea
                 placeholder="Type Your Message"
                 name="message"
               ></textarea>
+              <p class="res-message"></p>
               <button type="submit" class="rts-btn btn-primary">
                 Send Message
               </button>
@@ -286,7 +288,6 @@
     <!-- my custom js  -->
     <script src="assets/js/dynamicdata.js"></script>
     <script src="dist/js/app.bundle.js" defer></script>
-    <!-- GSAP JS  -->
-    <script src="gsap.js"></script>
+
   </body>
 </html>

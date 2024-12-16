@@ -6886,7 +6886,7 @@ xclip
  }
 
  .cta-bg-h4 {
-   background-image: url(../images/cta/rectangle.jpg);
+   background-image: url("/assets/images/cta/rectangle.jpg");
    overflow: hidden;
    z-index: 1;
    background-repeat: no-repeat;

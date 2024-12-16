@@ -439,18 +439,19 @@ const formFieldsTemplate = (parientContainer) => {
     console.log("Form container not found ", parientContainer);
     return false;
   }
-  formStructure.forEach((field) => {
-    let inputField;
-    if (field.type === "textarea") {
-      inputField = document.createElement("textarea");
-    } else {
-      inputField = document.createElement("input");
-    }
-    inputField.type = field.type;
-    inputField.placeholder = field.placeHolder;
-    inputField.required = field.required;
-    parientContainer.appendChild(inputField);
-  });
+    formStructure.forEach((field) => {
+      let inputField;
+      if (field.type === "textarea") {
+        inputField = document.createElement("textarea");
+      } else {
+        inputField = document.createElement("input");
+      }
+      inputField.type = field.type;
+      inputField.placeholder = field.placeHolder;
+      inputField.required = field.required;
+      inputField.name = field.name;
+      parientContainer.appendChild(inputField);
+    });
 };
 const homePageService = (parientContainer) => {
   if (!parientContainer) {
@@ -490,6 +491,40 @@ const homePageService = (parientContainer) => {
   });
 };
 
+function handleSubmitForm(){
+  const contactForm = document.querySelectorAll(".contact-form");
+  const resMessage = document.querySelector(".res-message");
+  const apiKey = '239f16c3-66b8-4d0a-87ec-17041c56b689';
+  contactForm.forEach((form)=>{
+    form.addEventListener("submit", async (e)=>{
+      e.preventDefault();
+      resMessage.style.display = "block";
+      resMessage.textContent = "Sending";
+      const formData = new FormData(e.target);
+      formData.append("access_key", apiKey);
+
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+      const data = await response.json();
+
+      if (data.success) {
+        resMessage.style.color = "green";
+        resMessage.textContent = data.message;
+        e.target.reset();
+      } else {
+        console.log("Error", data);
+        resMessage.textContent = data.message;
+      }
+      setTimeout(() => {
+        resMessage.style.display = "none";
+        resMessage.textContent = "";
+      }, 500);  
+    })
+
+  })
+}
 
 document.addEventListener("DOMContentLoaded", () => {
   headerTemplate(header);
@@ -500,10 +535,11 @@ document.addEventListener("DOMContentLoaded", () => {
   servicePageTemplate(servicePageContainer);
   const mainMenuContainer = document.querySelectorAll(".mainmenu");
   mainMenuContainer.forEach((menu) => mainMenuTemplate(menu));
-  const pathChangeServiePage = document.body.querySelectorAll("img[src]");
-  changePathForServicePage(pathChangeServiePage);
+  // const pathChangeServiePage = document.body.querySelectorAll("img[src]");
+  // changePathForServicePage(pathChangeServiePage);
   portfolioTemplate(projectCardsContainer);
   formFieldsTemplate(formDataContainer);
   clientsLogosTemplateGrid(gridClients);
   homePageService(homePageServiceContainer);
+  handleSubmitForm();
 });
