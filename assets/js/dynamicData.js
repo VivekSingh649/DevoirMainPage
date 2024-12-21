@@ -1,7 +1,8 @@
 const mainServices = [
   {
     name: "Branding",
-    thumbnail: "https://ddlanding.netlify.app/.netlify/images/?url=assets/images/service/branding.webp",
+    thumbnail:
+      "https://ddlanding.netlify.app/.netlify/images/?url=assets/images/service/branding.webp",
     icon: "assets/images/service/09.svg",
     link: "service/branding.html",
     content:
@@ -9,7 +10,8 @@ const mainServices = [
   },
   {
     name: "Marketing",
-    thumbnail: "https://ddlanding.netlify.app/.netlify/images/?url=assets/images/service/marketing.webp",
+    thumbnail:
+      "https://ddlanding.netlify.app/.netlify/images/?url=assets/images/service/marketing.webp",
     link: "service/service-details.html",
     icon: "assets/images/service/10.svg",
     content:
@@ -17,7 +19,8 @@ const mainServices = [
   },
   {
     name: "Designing",
-    thumbnail: "https://ddlanding.netlify.app/.netlify/images/?url=assets/images/service/graphic design.webp",
+    thumbnail:
+      "https://ddlanding.netlify.app/.netlify/images/?url=assets/images/service/graphic design.webp",
     link: "service/service-details.html",
     icon: "assets/images/service/11.svg",
     content:
@@ -25,7 +28,8 @@ const mainServices = [
   },
   {
     name: "Web Development",
-    thumbnail: "https://ddlanding.netlify.app/.netlify/images/?url=assets/images/service/Web-developemt.webp",
+    thumbnail:
+      "https://ddlanding.netlify.app/.netlify/images/?url=assets/images/service/Web-developemt.webp",
     link: "service/service-details.html",
     icon: "assets/images/service/12.svg",
     content: `Transforming visions into digital realities, our website design
@@ -59,7 +63,7 @@ const mainMenu = [
   },
   {
     name: "Blogs",
-    link: "/blogs",
+    link: "https://devoirdesigns.com/blogs/",
   },
   {
     name: "Portfolio",
@@ -126,53 +130,64 @@ const portFolio = [
     name: "Oneiro Education",
     keyword: "Art Design, Marketing, Web Development",
     link: "https://oneiroeducation.com/",
-    image: "https://ddlanding.netlify.app/.netlify/images?url=assets/projects/onerio.webp",
+    image:
+      "https://ddlanding.netlify.app/.netlify/images?url=assets/projects/onerio.webp",
   },
   {
     name: "Deepmala Sarees",
     keyword: "Branding, Art Design, Marketing",
     link: "https://www.instagram.com/deepmalasarees/",
-    image: "https://ddlanding.netlify.app/.netlify/images?url=assets/projects/deepmala.webp",
+    image:
+      "https://ddlanding.netlify.app/.netlify/images?url=assets/projects/deepmala.webp",
   },
   {
     name: "On Woods Products",
     keyword: "Branding, Strategy, Art Design, Marketing, Web Development",
     link: "https://onwoodproducts.co/",
-    image: "https://ddlanding.netlify.app/.netlify/images?url=assets/projects/onwoods.png",
+    image:
+      "https://ddlanding.netlify.app/.netlify/images?url=assets/projects/onwoods.png",
   },
   {
     name: "Resolve Rights",
     keyword: "Branding, Strategy, Art Design, Marketing, Web Development",
     link: "https://onwoodproducts.co/",
-    image: "https://ddlanding.netlify.app/.netlify/images?url=assets/projects/resolve-right.png",
+    image:
+      "https://ddlanding.netlify.app/.netlify/images?url=assets/projects/resolve-right.png",
   },
   {
     name: "Hartansh",
     keyword: "Branding, Art Design, Marketing, Web Development",
     link: "https://www.instagram.com/hartansh.official/",
-    image: "https://ddlanding.netlify.app/.netlify/images?url=assets/projects/hartansh.official.webp",
+    image:
+      "https://ddlanding.netlify.app/.netlify/images?url=assets/projects/hartansh.official.webp",
   },
   {
     name: "Neumaticoshuecha",
     keyword: "Branding, Web Development, Marketing",
     link: "https://www.neumaticoshuecha.com/",
-    image: "https://ddlanding.netlify.app/.netlify/images?url=assets/projects/neumaticoshuecha.webp",
+    image:
+      "https://ddlanding.netlify.app/.netlify/images?url=assets/projects/neumaticoshuecha.webp",
   },
   {
     name: "Curagers",
     keyword: "Art Design, Marketing, Web Development",
     link: "https://curagers.com/",
-    image: "https://ddlanding.netlify.app/.netlify/images?url=assets/projects/curagers.webp",
+    image:
+      "https://ddlanding.netlify.app/.netlify/images?url=assets/projects/curagers.webp",
   },
   {
     name: "Kabsons Global",
     keyword: "Branding, Web Mangment, Marketing",
     link: "https://kabsonsglobal.com/",
-    image: "https://ddlanding.netlify.app/.netlify/images?url=assets/projects/kaptions.webp",
+    image:
+      "https://ddlanding.netlify.app/.netlify/images?url=assets/projects/kaptions.webp",
   },
 ];
 const logoCount = 55;
 const logos = Array.from(
   { length: logoCount },
-  (_, i) => `https://ddlanding.netlify.app/.netlify/images?url=assets/logo/logo-${i + 1}.webp`
+  (_, i) =>
+    `https://ddlanding.netlify.app/.netlify/images?url=assets/logo/logo-${
+      i + 1
+    }.webp`
 );
