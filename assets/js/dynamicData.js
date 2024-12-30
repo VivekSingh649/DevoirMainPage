@@ -62,6 +62,10 @@ const mainMenu = [
     link: "/contact-us.html",
   },
   {
+    name: "Blogs",
+    link: "https://blog.devoirdesigns.com/",
+  },
+  {
     name: "Portfolio",
     link: "https://portfolio.devoirdesigns.com/",
   },

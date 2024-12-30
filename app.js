@@ -81,7 +81,7 @@ const footerTemplate = (footerElement) => {
                                <div class="single-footer-three-wized">
                                    <div class="header">
                                        <a href="#" style="display: flex; align-items: center;">
-                                           <img src="assets/logo/logo-white.png" alt="Footer_logo" style="max-width: 40px;">
+                                           <img src="https://ddlanding.netlify.app/assets/logo/logo-white.png" alt="Footer_logo" style="max-width: 40px;">
                                            <h5 style="margin: 0; margin-left: 25px; color: #fff;">Devoir Designs</h5>
                                        </a>
                                    </div>
@@ -439,19 +439,19 @@ const formFieldsTemplate = (parientContainer) => {
     console.log("Form container not found ", parientContainer);
     return false;
   }
-    formStructure.forEach((field) => {
-      let inputField;
-      if (field.type === "textarea") {
-        inputField = document.createElement("textarea");
-      } else {
-        inputField = document.createElement("input");
-      }
-      inputField.type = field.type;
-      inputField.placeholder = field.placeHolder;
-      inputField.required = field.required;
-      inputField.name = field.name;
-      parientContainer.appendChild(inputField);
-    });
+  formStructure.forEach((field) => {
+    let inputField;
+    if (field.type === "textarea") {
+      inputField = document.createElement("textarea");
+    } else {
+      inputField = document.createElement("input");
+    }
+    inputField.type = field.type;
+    inputField.placeholder = field.placeHolder;
+    inputField.required = field.required;
+    inputField.name = field.name;
+    parientContainer.appendChild(inputField);
+  });
 };
 const homePageService = (parientContainer) => {
   if (!parientContainer) {
@@ -491,12 +491,12 @@ const homePageService = (parientContainer) => {
   });
 };
 
-function handleSubmitForm(){
+function handleSubmitForm() {
   const contactForm = document.querySelectorAll(".contact-form");
   const resMessage = document.querySelector(".res-message");
-  const apiKey = '239f16c3-66b8-4d0a-87ec-17041c56b689';
-  contactForm.forEach((form)=>{
-    form.addEventListener("submit", async (e)=>{
+  const apiKey = "239f16c3-66b8-4d0a-87ec-17041c56b689";
+  contactForm.forEach((form) => {
+    form.addEventListener("submit", async (e) => {
       e.preventDefault();
       resMessage.style.display = "block";
       resMessage.textContent = "Sending";
@@ -520,10 +520,9 @@ function handleSubmitForm(){
       setTimeout(() => {
         resMessage.style.display = "none";
         resMessage.textContent = "";
-      }, 500);  
-    })
-
-  })
+      }, 500);
+    });
+  });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
