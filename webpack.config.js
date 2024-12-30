@@ -8,7 +8,7 @@ module.exports = {
   entry: {
     main: "./assets/js/main.js",
     jquery: "./assets/js/vendor/jquery.min.js",
-    dynamic: "./assets/js/dynamicdata.js",
+    dynamic: "./assets/js/dynamic-data.js",
     app: "/app.js",
     styles: [
       "./assets/css/vendor/bootstrap.min.css",
