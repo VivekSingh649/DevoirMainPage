@@ -33,8 +33,8 @@ const mainServices = [
     link: "service/service-details.html",
     icon: "assets/images/service/12.svg",
     content: `Transforming visions into digital realities, our website design
-                  and development services craft intuitive user experiences and
-                  visually stunning interfaces to captivate and engage audiences.`,
+                and development services craft intuitive user experiences and
+                visually stunning interfaces to captivate and engage audiences.`,
   },
 ];
 

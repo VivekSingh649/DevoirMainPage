@@ -1,1 +1,0 @@
-Array.from({length:55},((l,e)=>`https://ddlanding.netlify.app/.netlify/images?url=assets/logo/logo-${e+1}.webp`));
