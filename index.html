@@ -31,6 +31,7 @@
     />
     <link rel="stylesheet" href="assets/css/plugins/animate.min.css" />
     <link rel="stylesheet" href="dist/css/styles.bundle.css" />
+    <link rel="stylesheet" href="assets/css/plugins/swiper.min.css" />
   </head>
 
   <body class="homepage">
@@ -488,7 +489,7 @@
     </div>
     <!-- our expart team area End -->
 
-    <div class="rts-faq-area-one rts-section-gap">
+    <section class="rts-faq-area-one rts-section-gap">
       <div class="container">
         <div class="row g-6 align-items-center">
           <div
@@ -690,8 +691,9 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="rts-section-gap clients_logos bg_black">
+    </section>
+
+    <section class="rts-section-gap bg_black" id="clientslogo">
       <div class="container">
         <div class="row mb--30">
           <div class="title-area text-center">
@@ -711,12 +713,106 @@
             </h3>
           </div>
         </div>
-        <div
-          class="row row-cols-3 row-cols-md-5 gx-5 gy-1"
-          id="clients-logo-grid"
-        ></div>
+      </div>
+      <div class="marquee-container">
+        <div class="marquee-row right">
+          <div class="marquee-content"></div>
+        </div>
+        <div class="marquee-row left">
+          <div class="marquee-content"></div>
+        </div>
+        <div class="marquee-row right">
+          <div class="marquee-content"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- tart Customer feedback area -->
+    <div class="rts-testimonial-area-one">
+      <div class="bg-light-testimonial rts-section-gap" data-bg="#f7f7f7">
+        <div class="container">
+          <div class="row mb--30">
+            <div class="col-12">
+              <div class="title-area-testi">
+                <div class="title-area text-start">
+                  <h3
+                    class="title"
+                    data-sal-delay="250"
+                    data-sal="slide-up"
+                    data-sal-duration="800"
+                  >
+                    Client's Feedback
+                  </h3>
+                </div>
+                <div class="swiper-button-wrapper">
+                  <div
+                    class="clinet-button-prev swiper-button"
+                    tabindex="0"
+                    role="button"
+                    aria-label="Previous slide"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-chevron-double-left"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="clinet-button-next swiper-button"
+                    tabindex="0"
+                    role="button"
+                    aria-label="Next slide"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-chevron-double-right"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="slide-div">
+                <!-- Swiper -->
+                <div class="swiper testimonial-1">
+                  <div class="swiper-wrapper" id="clients-testimonials"></div>
+                </div>
+                <!-- swiper end -->
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <!-- tart Customer feedback area End -->
+
     <script src="assets/js/dynamicdata.js" defer></script>
     <!-- scripts start form hear -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -724,6 +820,7 @@
     <script src="https://ddlanding.netlify.app/assets/js/vendor/jquery.min.js"></script>
     <script src="https://ddlanding.netlify.app/assets/js/vendor/jqueryui.js"></script>
     <script src="https://ddlanding.netlify.app/assets/js/vendor/waypoint.js"></script>
+    <script src="assets/js/plugins/swiper.js"></script>
     <script src="https://ddlanding.netlify.app/assets/js/plugins/counterup.js"></script>
     <script src="https://ddlanding.netlify.app/assets/js/plugins/sal.min.js"></script>
     <script src="https://ddlanding.netlify.app/assets/js/plugins/fancybox.js"></script>
@@ -734,6 +831,7 @@
     <!-- main Js -->
     <script src="dist/js/main.bundle.js" defer></script>
     <!-- my custom js  -->
+    <script src="assets/js/clientslogo.js"></script>
     <script src="dist/js/app.bundle.js" defer></script>
     <script src="https://ddlanding.netlify.app/gsap.js"></script>
   </body>

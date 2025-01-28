@@ -183,11 +183,26 @@ const portFolio = [
       "https://ddlanding.netlify.app/.netlify/images?url=assets/projects/kaptions.webp",
   },
 ];
-const logoCount = 55;
-const logos = Array.from(
-  { length: logoCount },
-  (_, i) =>
-    `https://ddlanding.netlify.app/.netlify/images?url=assets/logo/logo-${
-      i + 1
-    }.webp`
-);
+
+const clinetsTestimonials = [
+  {
+    name: "Jatin Gupta",
+    reviewContent:
+      "Really great team, they helped us with really great work of creatives and content for our social media and websites. Would highly suggest them for someone looking for quality work at good price. <br>Cheers to team Babita.",
+  },
+  {
+    name: "Surbhi sachdeva",
+    reviewContent:
+      "Highly qualified and experienced team. They take care of eacha nsd every word told by their clients and make the social media look as beautiful and powerful as promised.",
+  },
+  {
+    name: "Sagar Jaggal",
+    reviewContent:
+      "Absolutely commendable work. Committed and disciplined towards the work. 100 % recommended",
+  },
+  {
+    name: "ravi saxena",
+    reviewContent:
+      "Really appreciate their work and professionalism…all the best to Devoir team and thanks for their work",
+  },
+];

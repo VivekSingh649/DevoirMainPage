@@ -1,3 +1,4 @@
+// import { clientsLogos } from "./assets/js/clientslogo";
 const header = document.createElement("header");
 const sideBar = document.createElement("div");
 const footerContainer = document.createElement("footer");
@@ -19,6 +20,9 @@ const formDataContainer = document.getElementById("formWrapper");
 const marqueeContainer = document.getElementById("brandMarquee");
 const gridClients = document.getElementById("clients-logo-grid");
 const homePageServiceContainer = document.getElementById("home-page-service");
+const clinetsTestimonialsContainer = document.getElementById(
+  "clients-testimonials"
+);
 
 // BLACK OR WHITE LOGO ACC.. PAGE
 const chageLogo = () => {
@@ -525,6 +529,63 @@ function handleSubmitForm() {
   });
 }
 
+function clientsFeedbacks(parientContainer) {
+  if (!parientContainer) {
+    if (!parientContainer) {
+      console.log("Testimonials Container not found ", parientContainer);
+      return false;
+    }
+  }
+  clinetsTestimonials.forEach((review, index) => {
+    const slide = document.createElement("div");
+    slide.classList.add("swiper-slide");
+    slide.innerHTML = `
+          <div class="single-testimonial-one">
+                        <div class="body">
+                          <p class="disc">
+                            ”${review.reviewContent}”
+                          </p>
+                        </div>
+                        <div class="footer">
+                          <div class="header-area">
+                          <img src="https://avatar.iran.liara.run/public/1"
+                          alt="client Logo"
+                          style="max-width: 65px"
+                        />
+                          <div class="name-desig">
+                            <a href="#">
+                              <h6>${review.name}</h6>
+                            </a>
+                        </div>
+                          </div>
+                        </div>
+              </div>
+    `;
+    parientContainer.appendChild(slide);
+  });
+}
+
+const firstGroup = clientsLogos.slice(0, 18);
+const secondGroup = clientsLogos.slice(18, 37);
+const thirdGroup = clientsLogos.slice(37);
+
+function createLogoElements() {
+  const marqueeLists = document.querySelectorAll(".marquee-content");
+
+  marqueeLists.forEach((list, index) => {
+    const logoGroup =
+      index === 0 ? firstGroup : index === 1 ? secondGroup : thirdGroup;
+
+    [...logoGroup, ...logoGroup].forEach((logoUrl) => {
+      const img = document.createElement("img");
+      img.src = logoUrl;
+      img.alt = "Logo";
+      img.className = "logo-img";
+      list.appendChild(img);
+    });
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   headerTemplate(header);
   sidebarTemplate(sideBar);
@@ -541,4 +602,6 @@ document.addEventListener("DOMContentLoaded", () => {
   clientsLogosTemplateGrid(gridClients);
   homePageService(homePageServiceContainer);
   handleSubmitForm();
+  clientsFeedbacks(clinetsTestimonialsContainer);
+  createLogoElements();
 });

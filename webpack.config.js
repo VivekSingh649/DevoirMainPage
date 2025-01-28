@@ -47,7 +47,7 @@ module.exports = {
           {
             loader: "css-loader",
             options: {
-              url: false, // This will prevent css-loader from processing url() statements
+              url: false,
             },
           },
         ],

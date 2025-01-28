@@ -13,6 +13,7 @@
         (this._html = $("html"));
     },
     methods: function (e) {
+      imJs.swiperActivation();
       imJs.vedioActivation();
       imJs.counterUp();
       imJs.salActive();
@@ -27,6 +28,24 @@
       imJs.marqueActivation();
       imJs.wowActive();
       imJs.mouseActive();
+    },
+
+    swiperActivation: function () {
+      $(document).ready(function () {
+        var swiper = new Swiper(".testimonial-1", {
+          slidesPerView: 1,
+          slidesPerGroup: 1,
+          loop: true,
+          loopFillGroupWithBlank: true,
+          navigation: {
+            nextEl: ".clinet-button-next",
+            prevEl: ".clinet-button-prev",
+          },
+          // autoplay: {
+          //   delay: 3000,
+          // },
+        });
+      });
     },
     // done
     vedioActivation: function (e) {

@@ -5655,7 +5655,7 @@ xclip
  }
 
  .service-detials-step-1 .service-details-card {
-   padding: 30px;
+   padding: 20px;
    box-shadow: 0px 8px 30px #6a6a6a1a;
    display: flex;
    align-items: flex-start;
@@ -8031,4 +8031,42 @@ xclip
 
  .index-six .modal-sidebar-scroll {
    display: none;
+ }
+
+
+ .marquee-container {
+   width: 100%;
+   overflow: hidden;
+ }
+
+ .marquee-row {
+   display: flex;
+   margin: 2rem 0;
+   gap: 2rem;
+ }
+
+ .marquee-content {
+   display: flex;
+   gap: 2rem;
+   animation: scroll 20s linear infinite;
+ }
+
+ .marquee-row.left .marquee-content {
+   animation-direction: reverse;
+ }
+
+ .logo-img {
+   width: 100px;
+   height: 100px;
+   object-fit: contain;
+ }
+
+ @keyframes scroll {
+   0% {
+     transform: translateX(0);
+   }
+
+   100% {
+     transform: translateX(-100%);
+   }
  }
