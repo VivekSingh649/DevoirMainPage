@@ -536,40 +536,46 @@ function clientsFeedbacks(parientContainer) {
       return false;
     }
   }
-  clinetsTestimonials.forEach((review, index) => {
-    const slide = document.createElement("div");
-    slide.classList.add("swiper-slide");
-    slide.innerHTML = `
-          <div class="single-testimonial-one">
-                        <div class="body">
-                          <p class="disc">
-                            ”${review.reviewContent}”
-                          </p>
-                        </div>
-                        <div class="footer">
-                          <div class="header-area">
-                          <img src="https://avatar.iran.liara.run/public/1"
-                          alt="client Logo"
-                          style="max-width: 65px"
-                        />
-                          <div class="name-desig">
-                            <a href="#">
-                              <h6>${review.name}</h6>
-                            </a>
-                        </div>
+  if (clinetsTestimonials) {
+    clinetsTestimonials.forEach((review, index) => {
+      const slide = document.createElement("div");
+      slide.classList.add("swiper-slide");
+      slide.innerHTML = `
+            <div class="single-testimonial-one">
+                          <div class="body">
+                            <p class="disc">
+                              ”${review.reviewContent}”
+                            </p>
                           </div>
-                        </div>
-              </div>
-    `;
-    parientContainer.appendChild(slide);
-  });
+                          <div class="footer">
+                            <div class="header-area">
+                            <img src="https://avatar.iran.liara.run/public/1"
+                            alt="client Logo"
+                            style="max-width: 65px"
+                          />
+                            <div class="name-desig">
+                              <a href="#">
+                                <h6>${review.name}</h6>
+                              </a>
+                          </div>
+                            </div>
+                          </div>
+                </div>
+      `;
+      parientContainer.appendChild(slide);
+    });
+  }
+  return;
 }
 
-const firstGroup = clientsLogos.slice(0, 18);
-const secondGroup = clientsLogos.slice(18, 37);
-const thirdGroup = clientsLogos.slice(37);
-
 function createLogoElements() {
+  if (!clientsLogos) {
+    return;
+  }
+
+  const firstGroup = clientsLogos.slice(0, 18);
+  const secondGroup = clientsLogos.slice(18, 37);
+  const thirdGroup = clientsLogos.slice(37);
   const marqueeLists = document.querySelectorAll(".marquee-content");
 
   marqueeLists.forEach((list, index) => {
