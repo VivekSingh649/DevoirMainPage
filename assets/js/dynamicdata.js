@@ -189,20 +189,24 @@ const clinetsTestimonials = [
     name: "Jatin Gupta",
     reviewContent:
       "Really great team, they helped us with really great work of creatives and content for our social media and websites. Would highly suggest them for someone looking for quality work at good price. <br>Cheers to team Babita.",
+    brandLogo: "/assets/logo/green-earth.jpg",
   },
   {
     name: "Surbhi sachdeva",
     reviewContent:
       "Highly qualified and experienced team. They take care of eacha nsd every word told by their clients and make the social media look as beautiful and powerful as promised.",
+    brandLogo: "/assets/logo/logo-26.webp",
   },
   {
     name: "Sagar Jaggal",
     reviewContent:
       "Absolutely commendable work. Committed and disciplined towards the work. 100 % recommended",
+    brandLogo: "/assets/logo/cafe-by-soul.svg",
   },
   {
-    name: "ravi saxena",
+    name: "Ravi saxena",
     reviewContent:
       "Really appreciate their work and professionalism…all the best to Devoir team and thanks for their work",
+    brandLogo: "/assets/logo/upgrada.jpg",
   },
 ];

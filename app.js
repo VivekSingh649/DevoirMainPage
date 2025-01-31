@@ -549,7 +549,10 @@ function clientsFeedbacks(parientContainer) {
                           </div>
                           <div class="footer">
                             <div class="header-area">
-                            <img src="https://avatar.iran.liara.run/public/1"
+                            <img src="${
+                              review.brandLogo ||
+                              "https://avatar.iran.liara.run/public/1"
+                            }"
                             alt="client Logo"
                             style="max-width: 65px"
                           />

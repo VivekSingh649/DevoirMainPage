@@ -475,6 +475,7 @@
 }
 
 .single-testimonial-one .header-area img {
+    border-radius: 50%;
     margin-right: 15px;
 }
 
