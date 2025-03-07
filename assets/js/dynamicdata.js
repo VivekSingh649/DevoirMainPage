@@ -118,6 +118,12 @@ const formStructure = [
     required: true,
   },
   {
+    type: "text",
+    name: "subject",
+    placeHolder: "Suject",
+    required: false,
+  },
+  {
     type: "textarea",
     name: "message",
     placeHolder: "Write your message here..",

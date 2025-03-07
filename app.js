@@ -1,4 +1,3 @@
-// import { clientsLogos } from "./assets/js/clientslogo";
 const header = document.createElement("header");
 const sideBar = document.createElement("div");
 const footerContainer = document.createElement("footer");
@@ -496,9 +495,9 @@ const homePageService = (parientContainer) => {
 };
 
 function handleSubmitForm() {
-  const contactForm = document.querySelectorAll(".contact-form");
+  const contactForm = document.querySelectorAll("form");
   const resMessage = document.querySelector(".res-message");
-  const apiKey = "239f16c3-66b8-4d0a-87ec-17041c56b689";
+  const apiKey = "937f1748-6c88-4cfe-bf95-8633823cc99f";
   contactForm.forEach((form) => {
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
