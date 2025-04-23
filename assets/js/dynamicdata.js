@@ -147,7 +147,7 @@ const portFolio = [
       "https://ddlanding.netlify.app/.netlify/images?url=assets/projects/deepmala.webp",
   },
   {
-    name: "On Woods Products",
+    name: "OnWood Products",
     keyword: "Branding, Strategy, Art Design, Marketing, Web Development",
     link: "https://onwoodproducts.co/",
     image:
