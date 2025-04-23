@@ -423,7 +423,9 @@ const portfolioTemplate = (parientContainer) => {
     }
     projectElment.innerHTML = `
             <div class="portfolio_card">
+            <div class="reveal">
               <img src="${project.image}" alt="${project.name}" />
+            </div>
               <div class="content_body">
                 <h3 class="c-light">${project.name}</h3>
                 <p class="c-light">${project.keyword}</p>
@@ -575,9 +577,9 @@ function createLogoElements() {
     return;
   }
 
-  const firstGroup = clientsLogos.slice(0, 18);
-  const secondGroup = clientsLogos.slice(18, 37);
-  const thirdGroup = clientsLogos.slice(37);
+  const firstGroup = clientsLogos.slice(0, 20);
+  const secondGroup = clientsLogos.slice(20, 40);
+  const thirdGroup = clientsLogos.slice(40);
   const marqueeLists = document.querySelectorAll(".marquee-content");
 
   marqueeLists.forEach((list, index) => {

@@ -53,4 +53,10 @@ const clientsLogos = [
   "https://ddlanding.netlify.app/.netlify/images?url=assets/logo/logo-53.webp&fm=avif&q=50",
   "https://ddlanding.netlify.app/.netlify/images?url=assets/logo/logo-54.webp&fm=avif&q=50",
   "https://ddlanding.netlify.app/.netlify/images?url=assets/logo/logo-55.webp&fm=avif&q=50",
+  "https://ddlanding.netlify.app/.netlify/images?url=assets/logo/logo-56.webp&fm=avif&q=50",
+  "https://ddlanding.netlify.app/.netlify/images?url=assets/logo/logo-57.webp&fm=avif&q=50",
+  "https://ddlanding.netlify.app/.netlify/images?url=assets/logo/logo-58.webp&fm=avif&q=50",
+  "https://ddlanding.netlify.app/.netlify/images?url=assets/logo/logo-59.webp&fm=avif&q=50",
+  "https://ddlanding.netlify.app/.netlify/images?url=assets/logo/logo-60.webp&fm=avif&q=50",
+  "https://ddlanding.netlify.app/.netlify/images?url=assets/logo/logo-61.webp&fm=avif&q=50",
 ];
