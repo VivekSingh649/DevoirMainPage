@@ -38,8 +38,8 @@ const headerTemplate = (headerElement) => {
                 <div class="row align-items-center">
                     <div class="col-lg-2 col-md-3 col-4">
                         <!-- logo area start -->
-                        <a href="/" class="thumbnail">
-                            <img class="normal" src="https://ddlanding.netlify.app/assets/logo/logo-white.png" alt="axela-logo">
+                        <a href="/" class="thumbnail">                        
+                            <img class="normal" src="https://ddlanding.netlify.app/assets/logo/logo-white-2.png" alt="Devoir logo">
                         </a>
                         <!-- logo area end -->
                     </div>
@@ -50,8 +50,7 @@ const headerTemplate = (headerElement) => {
                             </nav>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-10 col-md-9 col-8">
-    
+                    <div class="col-xl-3 col-lg-10 col-md-9 col-8">    
                         <div class="header-right">
                             <a href="tel:+919811173841" class="rts-btn btn-secondary call-btn">Let’s Talk
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
