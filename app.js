@@ -198,8 +198,13 @@ const sidebarTemplate = (sidebarElement) => {
               <button class="close-icon-menu"><i class="bi bi-x-lg"></i></button>
             <!-- inner menu area desktop start -->
             <div class="rts-sidebar-menu-desktop">
-                <a class="logo-1" href="index.html">
-                    <img class="logo" src="./assets/logo/logo-black.png" alt="axela_logo">
+                <a class="logo-1" href="index.html">                    
+                    <img class="logo"
+                         src="${
+                           document.body.classList.contains("homepage")
+                             ? "./assets/logo/logo-black.png"
+                             : "../assets/logo/logo-black.png"
+                         }" alt="Devoir Logo">
                 </a>
                 <div class="body d-none d-xl-block">
                     <p class="disc">
@@ -573,9 +578,7 @@ function clientsFeedbacks(parientContainer) {
 }
 
 function createLogoElements() {
-  if (!clientsLogos) {
-    return;
-  }
+  if (!clientsLogos) return;
 
   const firstGroup = clientsLogos.slice(0, 20);
   const secondGroup = clientsLogos.slice(20, 40);
