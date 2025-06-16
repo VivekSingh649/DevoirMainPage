@@ -138,6 +138,7 @@ const portFolio = [
     link: "https://oneiroeducation.com/",
     image:
       "https://ddlanding.netlify.app/.netlify/images?url=assets/projects/onerio.webp",
+    isPortrait: 70,
   },
   {
     name: "Deepmala Sarees",
@@ -145,6 +146,7 @@ const portFolio = [
     link: "https://www.instagram.com/deepmalasarees/",
     image:
       "https://ddlanding.netlify.app/.netlify/images?url=assets/projects/deepmala.webp",
+    isPortrait: 30,
   },
   {
     name: "OnWood Products",
@@ -152,6 +154,7 @@ const portFolio = [
     link: "https://onwoodproducts.co/",
     image:
       "https://ddlanding.netlify.app/.netlify/images?url=assets/projects/onwoods.png",
+    isPortrait: 50,
   },
   {
     name: "Resolve Rights",
@@ -159,6 +162,7 @@ const portFolio = [
     link: "https://onwoodproducts.co/",
     image:
       "https://ddlanding.netlify.app/.netlify/images?url=assets/projects/resolve-right.png",
+    isPortrait: 50,
   },
   {
     name: "Hartansh",
@@ -166,6 +170,7 @@ const portFolio = [
     link: "https://www.instagram.com/hartansh.official/",
     image:
       "https://ddlanding.netlify.app/.netlify/images?url=assets/projects/hartansh.official.webp",
+    isPortrait: 70,
   },
   {
     name: "Neumaticoshuecha",
@@ -173,6 +178,7 @@ const portFolio = [
     link: "https://www.neumaticoshuecha.com/",
     image:
       "https://ddlanding.netlify.app/.netlify/images?url=assets/projects/neumaticoshuecha.webp",
+    isPortrait: 30,
   },
   {
     name: "Curagers",
@@ -180,6 +186,7 @@ const portFolio = [
     link: "https://curagers.com/",
     image:
       "https://ddlanding.netlify.app/.netlify/images?url=assets/projects/curagers.webp",
+    isPortrait: 50,
   },
   {
     name: "Kabsons Global",
@@ -187,6 +194,23 @@ const portFolio = [
     link: "https://kabsonsglobal.com/",
     image:
       "https://ddlanding.netlify.app/.netlify/images?url=assets/projects/kaptions.webp",
+    isPortrait: 50,
+  },
+  {
+    name: "The Fitsapiens",
+    keyword: "Art Design, Marketing, Web Development",
+    link: "https://thefitsapiens.com/",
+    image:
+      "https://ddlanding.netlify.app/.netlify/images?url=assets/projects/fitsapiens.webp",
+    isPortrait: 30,
+  },
+  {
+    name: "Mela Artisans",
+    keyword: "Branding, Web Mangment, Marketing",
+    link: "https://melaartisans.com/",
+    image:
+      "https://ddlanding.netlify.app/.netlify/images?url=assets/projects/melaartisans.com.webp",
+    isPortrait: 70,
   },
 ];
 
@@ -195,7 +219,7 @@ const clinetsTestimonials = [
     name: "Jatin Gupta",
     reviewContent:
       "Really great team, they helped us with really great work of creatives and content for our social media and websites. Would highly suggest them for someone looking for quality work at good price. <br>Cheers to team Babita.",
-    brandLogo: "/assets/logo/green-earth.jpg",
+    brandLogo: "/assets/logo/green-earth.png",
   },
   {
     name: "Surbhi sachdeva",

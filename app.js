@@ -418,12 +418,12 @@ const portfolioTemplate = (parientContainer) => {
   portFolio.forEach((project, index) => {
     const projectElment = document.createElement("div");
     addAnimation(projectElment, index);
-    projectElment.classList.add("col-12", "col-md-6");
-    if (index == 0 || index == 5) {
+    if (project.isPortrait === 70) {
       projectElment.classList.add("col-lg-8");
-    }
-    if (index == 1 || index == 4) {
+    } else if (project.isPortrait === 30) {
       projectElment.classList.add("col-lg-4");
+    } else {
+      projectElment.classList.add("col-12", "col-md-6");
     }
     projectElment.innerHTML = `
             <div class="portfolio_card">
